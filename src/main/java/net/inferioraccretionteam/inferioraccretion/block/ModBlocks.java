@@ -5,8 +5,7 @@ import net.inferioraccretionteam.inferioraccretion.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -27,6 +26,36 @@ public class ModBlocks {
                         .sound(SoundType.CALCITE)
                         .requiresCorrectToolForDrops())
             ,CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> LIMESTONE_STAIRS = registerBlock(
+            "limestone_stairs",
+            () -> new StairBlock(() -> ModBlocks.LIMESTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(0.75f)
+                            .sound(SoundType.CALCITE)
+                            .requiresCorrectToolForDrops())
+            ,CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> LIMESTONE_SLAB = registerBlock(
+            "limestone_slab",
+            () -> new SlabBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(0.75f)
+                            .sound(SoundType.CALCITE)
+                            .requiresCorrectToolForDrops())
+            ,CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> LIMESTONE_WALL = registerBlock(
+            "limestone_wall",
+            () -> new WallBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(0.75f)
+                            .sound(SoundType.CALCITE)
+                            .requiresCorrectToolForDrops())
+            ,CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+
+
 
     public static final RegistryObject<Block> POLISHED_LIMESTONE = registerBlock(
             "polished_limestone",

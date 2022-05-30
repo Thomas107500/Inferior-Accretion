@@ -1,4 +1,7 @@
 {
   "block.inferioraccretion.limestone": "Limestone",
-  "block.inferioraccretion.polished_limestone": "Polished Limestone"
+  "block.inferioraccretion.polished_limestone": "Polished Limestone",
+  "block.inferioraccretion.limestone_stairs": "Limestone Stairs",
+  "block.inferioraccretion.limestone_slab": "Limestone Slab",
+  "block.inferioraccretion.limestone_wall": "Limestone Wall"
 }

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "inferioraccretion:limestone"
+    }
+  },
+  "result": {
+    "item": "inferioraccretion:limestone_stairs",
+    "count": 4
+  }
+}

@@ -66,6 +66,24 @@ public class ModBlocks {
                             .requiresCorrectToolForDrops())
             ,CreativeModeTab.TAB_BUILDING_BLOCKS);
 
+    public static final RegistryObject<Block> POLISHED_LIMESTONE_STAIRS = registerBlock(
+            "polished_limestone_stairs",
+            () -> new StairBlock(() -> ModBlocks.POLISHED_LIMESTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(0.75f)
+                            .sound(SoundType.CALCITE)
+                            .requiresCorrectToolForDrops())
+            ,CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> POLISHED_LIMESTONE_SLAB = registerBlock(
+            "polished_limestone_slab",
+            () -> new SlabBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(0.75f)
+                            .sound(SoundType.CALCITE)
+                            .requiresCorrectToolForDrops())
+            ,CreativeModeTab.TAB_BUILDING_BLOCKS);
+
 
 
 

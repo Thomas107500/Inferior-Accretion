@@ -2,9 +2,11 @@
   "replace": false,
   "values": [
     "inferioraccretion:limestone",
-    "inferioraccretion:polished_limestone",
     "inferioraccretion:limestone_stairs",
     "inferioraccretion:limestone_slab",
-    "inferioraccretion:limestone_wall"
+    "inferioraccretion:limestone_wall",
+    "inferioraccretion:polished_limestone",
+    "inferioraccretion:polished_limestone_stairs",
+    "inferioraccretion:polished_limestone_slab"
   ]
 }

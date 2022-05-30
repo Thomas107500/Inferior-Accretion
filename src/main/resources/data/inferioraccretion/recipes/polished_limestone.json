@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "inferioraccretion:limestone"
+    }
+  },
+  "result": {
+    "item": "inferioraccretion:polished_limestone",
+    "count": 4
+  }
+}

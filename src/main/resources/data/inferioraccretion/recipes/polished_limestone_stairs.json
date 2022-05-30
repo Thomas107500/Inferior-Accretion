@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:cobblestone"
+      "item": "inferioraccretion:polished_limestone"
     }
   },
   "result": {
-    "item": "minecraft:cobblestone_stairs",
+    "item": "inferioraccretion:polished_limestone_stairs",
     "count": 4
   }
 }

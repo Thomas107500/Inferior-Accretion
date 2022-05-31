@@ -7,6 +7,14 @@
     "inferioraccretion:limestone_wall",
     "inferioraccretion:polished_limestone",
     "inferioraccretion:polished_limestone_stairs",
-    "inferioraccretion:polished_limestone_slab"
+    "inferioraccretion:polished_limestone_slab",
+
+    "inferioraccretion:alabaster",
+    "inferioraccretion:alabaster_stairs",
+    "inferioraccretion:alabaster_slab",
+    "inferioraccretion:alabaster_wall",
+    "inferioraccretion:polished_alabaster",
+    "inferioraccretion:polished_alabaster_stairs",
+    "inferioraccretion:polished_alabaster_slab"
   ]
 }

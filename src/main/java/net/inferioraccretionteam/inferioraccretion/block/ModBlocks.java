@@ -23,6 +23,7 @@ public class ModBlocks {
             () -> new Block(
                     BlockBehaviour.Properties.of(Material.STONE)
                         .strength(0.75f)
+                        .explosionResistance(0.75f)
                         .sound(SoundType.CALCITE)
                         .requiresCorrectToolForDrops())
             ,CreativeModeTab.TAB_BUILDING_BLOCKS);
@@ -32,6 +33,7 @@ public class ModBlocks {
             () -> new StairBlock(() -> ModBlocks.LIMESTONE.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(0.75f)
+                            .explosionResistance(0.75f)
                             .sound(SoundType.CALCITE)
                             .requiresCorrectToolForDrops())
             ,CreativeModeTab.TAB_BUILDING_BLOCKS);
@@ -41,6 +43,7 @@ public class ModBlocks {
             () -> new SlabBlock(
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(0.75f)
+                            .explosionResistance(0.75f)
                             .sound(SoundType.CALCITE)
                             .requiresCorrectToolForDrops())
             ,CreativeModeTab.TAB_BUILDING_BLOCKS);
@@ -50,6 +53,7 @@ public class ModBlocks {
             () -> new WallBlock(
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(0.75f)
+                            .explosionResistance(0.75f)
                             .sound(SoundType.CALCITE)
                             .requiresCorrectToolForDrops())
             ,CreativeModeTab.TAB_BUILDING_BLOCKS);
@@ -62,6 +66,7 @@ public class ModBlocks {
             () -> new Block(
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(0.75f)
+                            .explosionResistance(0.75f)
                             .sound(SoundType.CALCITE)
                             .requiresCorrectToolForDrops())
             ,CreativeModeTab.TAB_BUILDING_BLOCKS);
@@ -71,6 +76,7 @@ public class ModBlocks {
             () -> new StairBlock(() -> ModBlocks.POLISHED_LIMESTONE.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(0.75f)
+                            .explosionResistance(0.75f)
                             .sound(SoundType.CALCITE)
                             .requiresCorrectToolForDrops())
             ,CreativeModeTab.TAB_BUILDING_BLOCKS);
@@ -80,7 +86,82 @@ public class ModBlocks {
             () -> new SlabBlock(
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(0.75f)
+                            .explosionResistance(0.75f)
                             .sound(SoundType.CALCITE)
+                            .requiresCorrectToolForDrops())
+            ,CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+
+    public static final RegistryObject<Block> ALABASTER = registerBlock(
+            "alabaster",
+            () -> new Block(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> ALABASTER_STAIRS = registerBlock(
+            "alabaster_stairs",
+            () -> new StairBlock(() -> ModBlocks.LIMESTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> ALABASTER_SLAB = registerBlock(
+            "alabaster_slab",
+            () -> new SlabBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> ALABASTER_WALL = registerBlock(
+            "alabaster_wall",
+            () -> new WallBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+
+
+
+    public static final RegistryObject<Block> POLISHED_ALABASTER = registerBlock(
+            "polished_alabaster",
+            () -> new Block(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> POLISHED_ALABASTER_STAIRS = registerBlock(
+            "polished_alabaster_stairs",
+            () -> new StairBlock(() -> ModBlocks.POLISHED_LIMESTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> POLISHED_ALABASTER_SLAB = registerBlock(
+            "polished_alabaster_slab",
+            () -> new SlabBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .sound(SoundType.STONE)
                             .requiresCorrectToolForDrops())
             ,CreativeModeTab.TAB_BUILDING_BLOCKS);
 

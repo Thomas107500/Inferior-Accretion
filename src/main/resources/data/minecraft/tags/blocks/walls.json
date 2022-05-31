@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "inferioraccretion:limestone_wall"
+    "inferioraccretion:limestone_wall",
+    "inferioraccretion:alabaster_wall"
   ]
 }

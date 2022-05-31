@@ -5,5 +5,13 @@
   "block.inferioraccretion.limestone_slab": "Limestone Slab",
   "block.inferioraccretion.limestone_wall": "Limestone Wall",
   "block.inferioraccretion.polished_limestone_stairs": "Polished Limestone Stairs",
-  "block.inferioraccretion.polished_limestone_slab": "Polished Limestone Slab"
+  "block.inferioraccretion.polished_limestone_slab": "Polished Limestone Slab",
+
+  "block.inferioraccretion.alabaster": "Alabaster",
+  "block.inferioraccretion.polished_alabaster": "Polished Alabaster",
+  "block.inferioraccretion.alabaster_stairs": "Alabaster Stairs",
+  "block.inferioraccretion.alabaster_slab": "Alabaster Slab",
+  "block.inferioraccretion.alabaster_wall": "Alabaster Wall",
+  "block.inferioraccretion.polished_alabaster_stairs": "Polished Alabaster Stairs",
+  "block.inferioraccretion.polished_alabaster_slab": "Polished Alabaster Slab"
 }

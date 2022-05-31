@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "inferioraccretion:block/polished_alabaster",
+    "top": "inferioraccretion:block/polished_alabaster",
+    "side": "inferioraccretion:block/polished_alabaster"
+  }
+}

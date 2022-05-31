@@ -262,8 +262,8 @@ public class ModBlocks {
                             .requiresCorrectToolForDrops())
             ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
 
-    public static final RegistryObject<Block> TRAVERTINE_BRICKS_STAIRS = registerBlock(
-            "travertine_bricks_stairs",
+    public static final RegistryObject<Block> TRAVERTINE_BRICK_STAIRS = registerBlock(
+            "travertine_brick_stairs",
             () -> new StairBlock(() -> ModBlocks.POLISHED_LIMESTONE.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(1.5f)
@@ -272,8 +272,8 @@ public class ModBlocks {
                             .requiresCorrectToolForDrops())
             ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
 
-    public static final RegistryObject<Block> TRAVERTINE_BRICKS_SLAB = registerBlock(
-            "travertine_bricks_slab",
+    public static final RegistryObject<Block> TRAVERTINE_BRICK_SLAB = registerBlock(
+            "travertine_brick_slab",
             () -> new SlabBlock(
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(1.5f)
@@ -282,8 +282,8 @@ public class ModBlocks {
                             .requiresCorrectToolForDrops())
             ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
 
-    public static final RegistryObject<Block> TRAVERTINE_BRICKS_WALL = registerBlock(
-            "travertine_bricks_wall",
+    public static final RegistryObject<Block> TRAVERTINE_BRICK_WALL = registerBlock(
+            "travertine_brick_wall",
             () -> new WallBlock(
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(1.5f)

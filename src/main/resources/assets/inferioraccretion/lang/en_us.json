@@ -24,9 +24,9 @@
   "block.inferioraccretion.polished_travertine_stairs": "Polished Travertine Stairs",
   "block.inferioraccretion.polished_travertine_slab": "Polished Travertine Slab",
   "block.inferioraccretion.travertine_bricks": "Travertine Bricks",
-  "block.inferioraccretion.travertine_bricks_stairs": "Travertine Bricks Stairs",
-  "block.inferioraccretion.travertine_bricks_slab": "Travertine Bricks Slab",
-  "block.inferioraccretion.travertine_bricks_wall": "Travertine Bricks Wall",
+  "block.inferioraccretion.travertine_brick_stairs": "Travertine Brick Stairs",
+  "block.inferioraccretion.travertine_brick_slab": "Travertine Brick Slab",
+  "block.inferioraccretion.travertine_brick_wall": "Travertine Brick Wall",
 
   "itemGroup.inferioraccretiontab": "Inferior Accretion"
 }

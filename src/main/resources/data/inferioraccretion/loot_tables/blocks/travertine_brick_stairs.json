@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "inferioraccretion:travertine_bricks_wall"
+          "name": "inferioraccretion:travertine_brick_stairs"
         }
       ],
       "conditions": [

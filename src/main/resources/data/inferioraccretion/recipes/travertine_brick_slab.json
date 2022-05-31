@@ -1,7 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
     "###"
   ],
   "key": {
@@ -10,7 +9,7 @@
     }
   },
   "result": {
-    "item": "inferioraccretion:travertine_bricks_wall",
+    "item": "inferioraccretion:travertine_brick_slab",
     "count": 6
   }
 }

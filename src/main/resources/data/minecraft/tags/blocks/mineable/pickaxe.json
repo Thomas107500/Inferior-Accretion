@@ -15,6 +15,19 @@
     "inferioraccretion:alabaster_wall",
     "inferioraccretion:polished_alabaster",
     "inferioraccretion:polished_alabaster_stairs",
-    "inferioraccretion:polished_alabaster_slab"
+    "inferioraccretion:polished_alabaster_slab",
+
+    "inferioraccretion:travertine",
+    "inferioraccretion:travertine_stairs",
+    "inferioraccretion:travertine_slab",
+    "inferioraccretion:travertine_wall",
+    "inferioraccretion:travertine_pillar",
+    "inferioraccretion:travertine_bricks",
+    "inferioraccretion:travertine_bricks_stairs",
+    "inferioraccretion:travertine_bricks_slab",
+    "inferioraccretion:travertine_bricks_wall",
+    "inferioraccretion:polished_travertine",
+    "inferioraccretion:polished_travertine_stairs",
+    "inferioraccretion:polished_travertine_slab"
   ]
 }

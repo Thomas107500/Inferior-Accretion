@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "inferioraccretion:limestone_wall",
-    "inferioraccretion:alabaster_wall"
+    "inferioraccretion:alabaster_wall",
+    "inferioraccretion:travertine_wall",
+    "inferioraccretion:travertine_bricks_wall"
   ]
 }

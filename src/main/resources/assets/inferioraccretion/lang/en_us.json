@@ -13,5 +13,20 @@
   "block.inferioraccretion.alabaster_slab": "Alabaster Slab",
   "block.inferioraccretion.alabaster_wall": "Alabaster Wall",
   "block.inferioraccretion.polished_alabaster_stairs": "Polished Alabaster Stairs",
-  "block.inferioraccretion.polished_alabaster_slab": "Polished Alabaster Slab"
+  "block.inferioraccretion.polished_alabaster_slab": "Polished Alabaster Slab",
+
+  "block.inferioraccretion.travertine": "Travertine",
+  "block.inferioraccretion.polished_travertine": "Polished Travertine",
+  "block.inferioraccretion.travertine_stairs": "Travertine Stairs",
+  "block.inferioraccretion.travertine_slab": "Travertine Slab",
+  "block.inferioraccretion.travertine_wall": "Travertine Wall",
+  "block.inferioraccretion.travertine_pillar": "Travertine Pillar",
+  "block.inferioraccretion.polished_travertine_stairs": "Polished Travertine Stairs",
+  "block.inferioraccretion.polished_travertine_slab": "Polished Travertine Slab",
+  "block.inferioraccretion.travertine_bricks": "Travertine Bricks",
+  "block.inferioraccretion.travertine_bricks_stairs": "Travertine Bricks Stairs",
+  "block.inferioraccretion.travertine_bricks_slab": "Travertine Bricks Slab",
+  "block.inferioraccretion.travertine_bricks_wall": "Travertine Bricks Wall",
+
+  "itemGroup.inferioraccretiontab": "Inferior Accretion"
 }

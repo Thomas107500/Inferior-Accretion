@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "inferioraccretion:block/travertine_slab"
+    },
+    "type=double": {
+      "model": "inferioraccretion:block/travertine"
+    },
+    "type=top": {
+      "model": "inferioraccretion:block/travertine_slab_top"
+    }
+  }
+}

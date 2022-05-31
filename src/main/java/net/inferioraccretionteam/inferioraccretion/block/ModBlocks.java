@@ -296,6 +296,143 @@ public class ModBlocks {
 
 
 
+    public static final RegistryObject<Block> RUSSET = registerBlock(
+            "russet",
+            () -> new Block(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> RUSSET_STAIRS = registerBlock(
+            "russet_stairs",
+            () -> new StairBlock(() -> ModBlocks.LIMESTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> RUSSET_SLAB = registerBlock(
+            "russet_slab",
+            () -> new SlabBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> RUSSET_WALL = registerBlock(
+            "russet_wall",
+            () -> new WallBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+
+    public static final RegistryObject<Block> POLISHED_RUSSET = registerBlock(
+            "polished_russet",
+            () -> new Block(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> POLISHED_RUSSET_STAIRS = registerBlock(
+            "polished_russet_stairs",
+            () -> new StairBlock(() -> ModBlocks.POLISHED_LIMESTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> POLISHED_RUSSET_SLAB = registerBlock(
+            "polished_russet_slab",
+            () -> new SlabBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> RUSSET_BRICKS = registerBlock(
+            "russet_bricks",
+            () -> new Block(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> RUSSET_BRICK_STAIRS = registerBlock(
+            "russet_brick_stairs",
+            () -> new StairBlock(() -> ModBlocks.POLISHED_LIMESTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> RUSSET_BRICK_SLAB = registerBlock(
+            "russet_brick_slab",
+            () -> new SlabBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> RUSSET_BRICK_WALL = registerBlock(
+            "russet_brick_wall",
+            () -> new WallBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> CRACKED_RUSSET_BRICKS = registerBlock(
+            "cracked_russet_bricks",
+            () -> new Block(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> CHISELED_RUSSET_BRICKS = registerBlock(
+            "chiseled_russet_bricks",
+            () -> new Block(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+
+
+
+
+
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);

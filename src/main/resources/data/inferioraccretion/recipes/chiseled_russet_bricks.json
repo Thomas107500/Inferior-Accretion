@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "inferioraccretion:russet_brick_slab"
+    }
+  },
+  "result": {
+    "item": "inferioraccretion:chiseled_russet_bricks"
+  }
+}

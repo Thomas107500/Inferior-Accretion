@@ -28,5 +28,19 @@
   "block.inferioraccretion.travertine_brick_slab": "Travertine Brick Slab",
   "block.inferioraccretion.travertine_brick_wall": "Travertine Brick Wall",
 
+  "block.inferioraccretion.russet": "Russet",
+  "block.inferioraccretion.polished_russet": "Polished Russet",
+  "block.inferioraccretion.russet_stairs": "Russet Stairs",
+  "block.inferioraccretion.russet_slab": "Russet Slab",
+  "block.inferioraccretion.russet_wall": "Russet Wall",
+  "block.inferioraccretion.polished_russet_stairs": "Polished Russet Stairs",
+  "block.inferioraccretion.polished_russet_slab": "Polished Russet Slab",
+  "block.inferioraccretion.russet_bricks": "Russet Bricks",
+  "block.inferioraccretion.russet_brick_stairs": "Russet Brick Stairs",
+  "block.inferioraccretion.russet_brick_slab": "Russet Brick Slab",
+  "block.inferioraccretion.russet_brick_wall": "Russet Brick Wall",
+  "block.inferioraccretion.cracked_russet_bricks": "Cracked Russet Bricks",
+  "block.inferioraccretion.chiseled_russet_bricks": "Chiseled Russet Bricks",
+
   "itemGroup.inferioraccretiontab": "Inferior Accretion"
 }

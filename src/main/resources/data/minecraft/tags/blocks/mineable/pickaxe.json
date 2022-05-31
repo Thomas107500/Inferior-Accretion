@@ -28,6 +28,20 @@
     "inferioraccretion:travertine_brick_wall",
     "inferioraccretion:polished_travertine",
     "inferioraccretion:polished_travertine_stairs",
-    "inferioraccretion:polished_travertine_slab"
+    "inferioraccretion:polished_travertine_slab",
+
+    "inferioraccretion:russet",
+    "inferioraccretion:russet_stairs",
+    "inferioraccretion:russet_slab",
+    "inferioraccretion:russet_wall",
+    "inferioraccretion:russet_bricks",
+    "inferioraccretion:russet_brick_stairs",
+    "inferioraccretion:russet_brick_slab",
+    "inferioraccretion:russet_brick_wall",
+    "inferioraccretion:polished_russet",
+    "inferioraccretion:polished_russet_stairs",
+    "inferioraccretion:polished_russet_slab",
+    "inferioraccretion:cracked_russet_bricks",
+    "inferioraccretion:chiseled_russet_bricks"
   ]
 }

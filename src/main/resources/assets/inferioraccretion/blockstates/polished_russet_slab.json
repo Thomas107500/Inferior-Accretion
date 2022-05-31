@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "inferioraccretion:block/polished_russet_slab"
+    },
+    "type=double": {
+      "model": "inferioraccretion:block/polished_russet"
+    },
+    "type=top": {
+      "model": "inferioraccretion:block/polished_russet_slab_top"
+    }
+  }
+}

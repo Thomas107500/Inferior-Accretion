@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "inferioraccretion:russet_bricks"
+  },
+  "result": "inferioraccretion:russet_brick_wall",
+  "count": 1
+}

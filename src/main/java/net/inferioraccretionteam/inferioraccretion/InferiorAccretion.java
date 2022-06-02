@@ -2,7 +2,10 @@ package net.inferioraccretionteam.inferioraccretion;
 
 import com.mojang.logging.LogUtils;
 import net.inferioraccretionteam.inferioraccretion.block.ModBlocks;
+import net.inferioraccretionteam.inferioraccretion.entity.ModEntityTypes;
+import net.inferioraccretionteam.inferioraccretion.entity.client.UndeadHogRenderer;
 import net.inferioraccretionteam.inferioraccretion.item.ModItems;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -27,7 +30,7 @@ public class InferiorAccretion
     public static final String MOD_ID = "inferioraccretion";
 
     // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
 
     public InferiorAccretion()
@@ -39,6 +42,8 @@ public class InferiorAccretion
 
         ModBlocks.register(eventBus);
         ModItems.register(eventBus);
+        ModEntityTypes.register(eventBus);
+
 
 
 

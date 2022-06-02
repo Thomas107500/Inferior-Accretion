@@ -42,5 +42,9 @@
   "block.inferioraccretion.cracked_russet_bricks": "Cracked Russet Bricks",
   "block.inferioraccretion.chiseled_russet_bricks": "Chiseled Russet Bricks",
 
-  "itemGroup.inferioraccretiontab": "Inferior Accretion"
+  "item.inferioraccretion.undead_hog_spawn_egg": "Undead Hog Spawn Egg",
+
+  "itemGroup.inferioraccretiontab": "Inferior Accretion",
+
+  "entity.inferioraccretion.undead_hog": "Undead Hog"
 }

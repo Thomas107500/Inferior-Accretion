@@ -3,6 +3,7 @@ package net.inferioraccretionteam.inferioraccretion.block;
 import net.inferioraccretionteam.inferioraccretion.InferiorAccretion;
 import net.inferioraccretionteam.inferioraccretion.item.ModCreativeModeTab;
 import net.inferioraccretionteam.inferioraccretion.item.ModItems;
+import net.minecraft.client.model.EntityModel;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;

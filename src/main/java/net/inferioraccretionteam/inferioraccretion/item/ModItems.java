@@ -18,6 +18,9 @@ public class ModItems {
                     0x524e30,
                     new Item.Properties().tab(ModCreativeModeTab.INFERIOR_ACCRETION_TAB)));
 
+    public static final RegistryObject<Item> ROTTEN_HIDE = ITEMS.register("rotten_hide",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.INFERIOR_ACCRETION_TAB).food(ModFoodItems.ROTTEN_HIDE)));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

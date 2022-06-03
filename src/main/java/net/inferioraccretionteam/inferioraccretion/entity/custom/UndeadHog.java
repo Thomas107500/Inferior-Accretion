@@ -5,8 +5,10 @@ import com.google.common.collect.ImmutableSet;
 import com.mojang.datafixers.util.Pair;
 import com.mojang.serialization.Dynamic;
 import net.inferioraccretionteam.inferioraccretion.entity.ModEntityTypes;
+import net.inferioraccretionteam.inferioraccretion.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.Brain;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -20,6 +22,7 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.monster.Zoglin;
 import net.minecraft.world.entity.monster.hoglin.HoglinBase;
 import net.minecraft.world.entity.schedule.Activity;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -68,9 +71,14 @@ public class UndeadHog extends Zoglin implements Enemy, HoglinBase{
         return this.getBrain().getMemory(MemoryModuleType.NEAREST_VISIBLE_LIVING_ENTITIES).orElse(NearestVisibleLivingEntities.empty()).findClosest(this::isTargetable);
     }
 
-    private boolean isTargetable(LivingEntity p_34253_) {
-        EntityType<?> entitytype = p_34253_.getType();
-        return entitytype != ModEntityTypes.UNDEAD_HOG.get() && entitytype != EntityType.CREEPER && Sensor.isEntityAttackable(this, p_34253_);
+
+    private boolean isFullStaleArmor(LivingEntity entity){
+        return entity.getItemBySlot(EquipmentSlot.HEAD).getItem() == ModItems.STALE_CAP.get() && entity.getItemBySlot(EquipmentSlot.CHEST).getItem() == ModItems.STALE_TUNIC.get() && entity.getItemBySlot(EquipmentSlot.LEGS).getItem() == ModItems.STALE_PANTS.get() && entity.getItemBySlot(EquipmentSlot.FEET).getItem() == ModItems.STALE_BOOTS.get();
+    }
+
+    private boolean isTargetable(LivingEntity entity) {
+        EntityType<?> entitytype = entity.getType();
+        return !isFullStaleArmor(entity) && entitytype != ModEntityTypes.UNDEAD_HOG.get() && entitytype != EntityType.CREEPER && Sensor.isEntityAttackable(this, entity);
     }
 
 

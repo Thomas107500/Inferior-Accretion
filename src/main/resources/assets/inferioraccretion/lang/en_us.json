@@ -45,6 +45,11 @@
   "item.inferioraccretion.undead_hog_spawn_egg": "Undead Hog Spawn Egg",
   "item.inferioraccretion.rotten_hide": "Rotten Hide",
 
+  "item.inferioraccretion.stale_cap": "Stale Cap",
+  "item.inferioraccretion.stale_tunic": "Stale Tunic",
+  "item.inferioraccretion.stale_pants": "Stale Pants",
+  "item.inferioraccretion.stale_boots": "Stale Boots",
+
   "itemGroup.inferioraccretiontab": "Inferior Accretion",
 
   "entity.inferioraccretion.undead_hog": "Undead Hog"

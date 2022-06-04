@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "inferioraccretion:block/cut_serene_top",
+    "side": "inferioraccretion:block/cut_serene"
+  }
+}

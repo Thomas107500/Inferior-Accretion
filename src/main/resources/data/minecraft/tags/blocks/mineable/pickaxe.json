@@ -42,6 +42,17 @@
     "inferioraccretion:polished_russet_stairs",
     "inferioraccretion:polished_russet_slab",
     "inferioraccretion:cracked_russet_bricks",
-    "inferioraccretion:chiseled_russet_bricks"
+    "inferioraccretion:chiseled_russet_bricks",
+
+    "inferioraccretion:serene",
+    "inferioraccretion:serene_stairs",
+    "inferioraccretion:serene_slab",
+    "inferioraccretion:serene_wall",
+    "inferioraccretion:cut_serene",
+    "inferioraccretion:cut_serene_slab",
+    "inferioraccretion:smooth_serene",
+    "inferioraccretion:smooth_serene_stairs",
+    "inferioraccretion:smooth_serene_slab",
+    "inferioraccretion:chiseled_serene"
   ]
 }

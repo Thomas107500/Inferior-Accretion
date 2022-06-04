@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "inferioraccretion:block/smooth_serene_slab"
+    },
+    "type=double": {
+      "model": "inferioraccretion:block/smooth_serene"
+    },
+    "type=top": {
+      "model": "inferioraccretion:block/smooth_serene_slab_top"
+    }
+  }
+}

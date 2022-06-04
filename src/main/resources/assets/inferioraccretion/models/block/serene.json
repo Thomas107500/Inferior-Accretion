@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "inferioraccretion:block/serene_top",
+    "bottom": "inferioraccretion:block/serene_bottom",
+    "side": "inferioraccretion:block/serene"
+  }
+}

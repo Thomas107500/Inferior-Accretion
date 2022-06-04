@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:smooth_serene"
+    }
+  },
+  "result": {
+    "item": "minecraft:smooth_serene_stairs",
+    "count": 4
+  }
+}

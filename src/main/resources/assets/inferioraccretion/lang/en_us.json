@@ -42,6 +42,17 @@
   "block.inferioraccretion.cracked_russet_bricks": "Cracked Russet Bricks",
   "block.inferioraccretion.chiseled_russet_bricks": "Chiseled Russet Bricks",
 
+  "block.inferioraccretion.serene": "Serene",
+  "block.inferioraccretion.serene_stairs": "Serene Stairs",
+  "block.inferioraccretion.serene_slab": "Serene Slab",
+  "block.inferioraccretion.serene_wall": "Serene Wall",
+  "block.inferioraccretion.cut_serene": "Cut Serene",
+  "block.inferioraccretion.cut_serene_slab": "Cut Serene Slab",
+  "block.inferioraccretion.smooth_serene": "Smooth Serene",
+  "block.inferioraccretion.smooth_serene_stairs": "Smooth Serene Stairs",
+  "block.inferioraccretion.smooth_serene_slab": "Smooth Serene Slab",
+  "block.inferioraccretion.chiseled_serene": "Chiseled Serene",
+
   "item.inferioraccretion.undead_hog_spawn_egg": "Undead Hog Spawn Egg",
   "item.inferioraccretion.rotten_hide": "Rotten Hide",
 

@@ -106,7 +106,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> ALABASTER_STAIRS = registerBlock(
             "alabaster_stairs",
-            () -> new StairBlock(() -> ModBlocks.LIMESTONE.get().defaultBlockState(),
+            () -> new StairBlock(() -> ModBlocks.ALABASTER.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(1.5f)
                             .explosionResistance(6f)
@@ -149,7 +149,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> POLISHED_ALABASTER_STAIRS = registerBlock(
             "polished_alabaster_stairs",
-            () -> new StairBlock(() -> ModBlocks.POLISHED_LIMESTONE.get().defaultBlockState(),
+            () -> new StairBlock(() -> ModBlocks.POLISHED_ALABASTER.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(1.5f)
                             .explosionResistance(6f)
@@ -182,7 +182,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> TRAVERTINE_STAIRS = registerBlock(
             "travertine_stairs",
-            () -> new StairBlock(() -> ModBlocks.LIMESTONE.get().defaultBlockState(),
+            () -> new StairBlock(() -> ModBlocks.TRAVERTINE.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(1.5f)
                             .explosionResistance(6f)
@@ -235,7 +235,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> POLISHED_TRAVERTINE_STAIRS = registerBlock(
             "polished_travertine_stairs",
-            () -> new StairBlock(() -> ModBlocks.POLISHED_LIMESTONE.get().defaultBlockState(),
+            () -> new StairBlock(() -> ModBlocks.POLISHED_TRAVERTINE.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(1.5f)
                             .explosionResistance(6f)
@@ -265,7 +265,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> TRAVERTINE_BRICK_STAIRS = registerBlock(
             "travertine_brick_stairs",
-            () -> new StairBlock(() -> ModBlocks.POLISHED_LIMESTONE.get().defaultBlockState(),
+            () -> new StairBlock(() -> ModBlocks.TRAVERTINE_BRICKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(1.5f)
                             .explosionResistance(6f)
@@ -309,7 +309,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> RUSSET_STAIRS = registerBlock(
             "russet_stairs",
-            () -> new StairBlock(() -> ModBlocks.LIMESTONE.get().defaultBlockState(),
+            () -> new StairBlock(() -> ModBlocks.RUSSET.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(1.5f)
                             .explosionResistance(6f)
@@ -350,7 +350,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> POLISHED_RUSSET_STAIRS = registerBlock(
             "polished_russet_stairs",
-            () -> new StairBlock(() -> ModBlocks.POLISHED_LIMESTONE.get().defaultBlockState(),
+            () -> new StairBlock(() -> ModBlocks.POLISHED_RUSSET.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(1.5f)
                             .explosionResistance(6f)
@@ -380,7 +380,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> RUSSET_BRICK_STAIRS = registerBlock(
             "russet_brick_stairs",
-            () -> new StairBlock(() -> ModBlocks.POLISHED_LIMESTONE.get().defaultBlockState(),
+            () -> new StairBlock(() -> ModBlocks.RUSSET_BRICKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(1.5f)
                             .explosionResistance(6f)
@@ -428,6 +428,108 @@ public class ModBlocks {
                             .requiresCorrectToolForDrops())
             ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
 
+
+
+
+    public static final RegistryObject<Block> SERENE = registerBlock(
+            "serene",
+            () -> new Block(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(0.8f)
+                            .explosionResistance(0.8f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> SERENE_STAIRS = registerBlock(
+            "serene_stairs",
+            () -> new StairBlock(() -> ModBlocks.SERENE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(0.8f)
+                            .explosionResistance(0.8f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> SERENE_SLAB = registerBlock(
+            "serene_slab",
+            () -> new SlabBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(0.8f)
+                            .explosionResistance(0.8f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> SERENE_WALL = registerBlock(
+            "serene_wall",
+            () -> new WallBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(0.8f)
+                            .explosionResistance(0.8f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> CUT_SERENE = registerBlock(
+            "cut_serene",
+            () -> new RotatedPillarBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(0.8f)
+                            .explosionResistance(0.8f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> CUT_SERENE_SLAB = registerBlock(
+            "cut_serene_slab",
+            () -> new SlabBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(0.8f)
+                            .explosionResistance(0.8f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> SMOOTH_SERENE = registerBlock(
+            "smooth_serene",
+            () -> new Block(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(6f)
+                            .explosionResistance(6f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> SMOOTH_SERENE_STAIRS = registerBlock(
+            "smooth_serene_stairs",
+            () -> new StairBlock(() -> ModBlocks.SMOOTH_SERENE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(6f)
+                            .explosionResistance(6f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> SMOOTH_SERENE_SLAB = registerBlock(
+            "smooth_serene_slab",
+            () -> new SlabBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(6f)
+                            .explosionResistance(6f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> CHISELED_SERENE = registerBlock(
+            "chiseled_serene",
+            () -> new Block(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(0.8f)
+                            .explosionResistance(0.8f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
 
 
 

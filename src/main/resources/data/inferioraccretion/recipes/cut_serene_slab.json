@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "inferioraccretion:cut_serene"
+    }
+  },
+  "result": {
+    "item": "minecraft:cut_serene_slab",
+    "count": 6
+  }
+}

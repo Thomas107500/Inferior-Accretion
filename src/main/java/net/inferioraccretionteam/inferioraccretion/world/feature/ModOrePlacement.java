@@ -12,7 +12,7 @@ import net.minecraft.world.level.levelgen.placement.*;
 import java.util.List;
 
 public class ModOrePlacement {
-
+/*
     public static List<PlacementModifier> orePlacement(PlacementModifier p_195347_, PlacementModifier p_195348_) {
         return List.of(p_195347_, InSquarePlacement.spread(), p_195348_, BiomeFilter.biome());
     }
@@ -30,4 +30,6 @@ public class ModOrePlacement {
         return List.of(CountPlacement.of(16), InSquarePlacement.spread(), RandomOffsetPlacement.of(ConstantInt.of(10), ConstantInt.of(10)), BlockPredicateFilter.forPredicate(BlockPredicate.allOf(BlockPredicate.matchesBlock(Blocks.DEEPSLATE_DIAMOND_ORE, Vec3i.ZERO))));
 
     }
+
+ */
 }

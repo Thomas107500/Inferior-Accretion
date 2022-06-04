@@ -27,8 +27,12 @@ public class ModConfiguredFeatures {
             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.ALABASTER.get().defaultBlockState())
     );*/
 
+    //TODO: should spawn next to deepslate diamond instead, improvement needed
     public static final RegistryObject<ConfiguredFeature<?,?>> ALABASTER = CONFIGURED_FEATURES.register("alabaster",
-            ()->new ConfiguredFeature<>(Feature.ORE,new OreConfiguration(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.ALABASTER.get().defaultBlockState(),15)));
+            ()->new ConfiguredFeature<>(Feature.ORE,new OreConfiguration(
+                    List.of(
+                            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.ALABASTER.get().defaultBlockState())
+                    ),16)));
 
     public static void register(IEventBus eventBus){
         CONFIGURED_FEATURES.register(eventBus);

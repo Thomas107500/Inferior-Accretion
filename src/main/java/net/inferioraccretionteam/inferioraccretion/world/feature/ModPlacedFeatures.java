@@ -23,9 +23,17 @@ public class ModPlacedFeatures {
     public static final RegistryObject<PlacedFeature> ALABASTER_PLACED = PLACED_FEATURES.register("alabaster_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.ALABASTER.getHolder().get(),
                     //veins per chunk
-                    List.of(CountPlacement.of(2) ,
+                    List.of(CountPlacement.of(3) ,
                             InSquarePlacement.spread(),
                             HeightRangePlacement.triangle(VerticalAnchor.bottom(), VerticalAnchor.absolute(-45)),
+                            BiomeFilter.biome())));
+
+    public static final RegistryObject<PlacedFeature> SERENE_PLACED = PLACED_FEATURES.register("serene_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.SERENE.getHolder().get(),
+                    //veins per chunk
+                    List.of(CountPlacement.of(3) ,
+                            InSquarePlacement.spread(),
+                            HeightRangePlacement.triangle(VerticalAnchor.absolute(45), VerticalAnchor.absolute(62)),
                             BiomeFilter.biome())));
 
     public static void register(IEventBus eventBus){

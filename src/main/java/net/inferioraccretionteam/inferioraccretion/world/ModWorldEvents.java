@@ -14,7 +14,6 @@ public class ModWorldEvents {
 
     @SubscribeEvent(priority = EventPriority.HIGH)
     public static void biomeLoadingEvent(final BiomeLoadingEvent event){
-        LOGGER.info("[Inferior Accretion] Handling Ore Generation...");
         ModOreGeneration.generateOres(event);
     }
 }

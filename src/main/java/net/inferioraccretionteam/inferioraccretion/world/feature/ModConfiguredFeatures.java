@@ -42,6 +42,12 @@ public class ModConfiguredFeatures {
                             OreConfiguration.target(new BlockMatchTest(Blocks.SANDSTONE), ModBlocks.SERENE.get().defaultBlockState())
                     ),16)));
 
+    public static final RegistryObject<ConfiguredFeature<?,?>> DRYSTONE = CONFIGURED_FEATURES.register("drystone",
+            ()->new ConfiguredFeature<>(Feature.ORE,new OreConfiguration(
+                    List.of(
+                            OreConfiguration.target(new BlockMatchTest(Blocks.RED_TERRACOTTA), ModBlocks.DRYSTONE.get().defaultBlockState())
+                    ),34)));
+
 
 
     public static void register(IEventBus eventBus){

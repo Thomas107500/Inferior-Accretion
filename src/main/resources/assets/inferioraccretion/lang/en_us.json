@@ -53,6 +53,22 @@
   "block.inferioraccretion.smooth_serene_slab": "Smooth Serene Slab",
   "block.inferioraccretion.chiseled_serene": "Chiseled Serene",
 
+  "block.inferioraccretion.drystone": "Drystone",
+  "block.inferioraccretion.drystone_stairs": "Drystone Stairs",
+  "block.inferioraccretion.drystone_slab": "Drystone Slab",
+  "block.inferioraccretion.drystone_wall": "Drystone Wall",
+  "block.inferioraccretion.polished_drystone": "Polished Drystone",
+  "block.inferioraccretion.polished_drystone_slab": "Polished Drystone Slab",
+  "block.inferioraccretion.polished_drystone_stairs": "Polished Drystone Stairs",
+  "block.inferioraccretion.chiseled_drystone_bricks": "Chiseled Drystone Bricks",
+  "block.inferioraccretion.drystone_bricks": "Drystone Bricks",
+  "block.inferioraccretion.drystone_brick_slab": "Drystone Brick Slab",
+  "block.inferioraccretion.drystone_brick_stairs": "Drystone Brick Stairs",
+  "block.inferioraccretion.drystone_brick_wall": "Drystone Brick Wall",
+  "block.inferioraccretion.drystone_tiles": "Drystone Tiles",
+  "block.inferioraccretion.drystone_tile_stairs": "Drystone Tile Stairs",
+  "block.inferioraccretion.drystone_tile_slab": "Drystone Tile Slab",
+
   "item.inferioraccretion.undead_hog_spawn_egg": "Undead Hog Spawn Egg",
   "item.inferioraccretion.rotten_hide": "Rotten Hide",
 

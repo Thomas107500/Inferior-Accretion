@@ -53,6 +53,22 @@
     "inferioraccretion:smooth_serene",
     "inferioraccretion:smooth_serene_stairs",
     "inferioraccretion:smooth_serene_slab",
-    "inferioraccretion:chiseled_serene"
+    "inferioraccretion:chiseled_serene",
+
+    "inferioraccretion:drystone",
+    "inferioraccretion:drystone_stairs",
+    "inferioraccretion:drystone_slab",
+    "inferioraccretion:drystone_wall",
+    "inferioraccretion:polished_drystone",
+    "inferioraccretion:polished_drystone_slab",
+    "inferioraccretion:polished_drystone_stairs",
+    "inferioraccretion:chiseled_drystone_bricks",
+    "inferioraccretion:drystone_bricks",
+    "inferioraccretion:drystone_brick_slab",
+    "inferioraccretion:drystone_brick_stairs",
+    "inferioraccretion:drystone_brick_wall",
+    "inferioraccretion:drystone_tiles",
+    "inferioraccretion:drystone_tile_stairs",
+    "inferioraccretion:drystone_tile_slab"
   ]
 }

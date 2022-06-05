@@ -7,6 +7,8 @@
     "inferioraccretion:travertine_brick_wall",
     "inferioraccretion:russet_wall",
     "inferioraccretion:russet_brick_wall",
-    "inferioraccretion:serene_wall"
+    "inferioraccretion:serene_wall",
+    "inferioraccretion:drystone_wall",
+    "inferioraccretion:drystone_brick_wall"
   ]
 }

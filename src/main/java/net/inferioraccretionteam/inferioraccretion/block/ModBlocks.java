@@ -534,6 +534,159 @@ public class ModBlocks {
 
 
 
+    public static final RegistryObject<Block> DRYSTONE = registerBlock(
+            "drystone",
+            () -> new Block(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.25f)
+                            .explosionResistance(4.2f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            , ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> DRYSTONE_STAIRS = registerBlock(
+            "drystone_stairs",
+            () -> new StairBlock(() -> ModBlocks.DRYSTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.25f)
+                            .explosionResistance(4.2f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> DRYSTONE_SLAB = registerBlock(
+            "drystone_slab",
+            () -> new SlabBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.25f)
+                            .explosionResistance(4.2f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> DRYSTONE_WALL = registerBlock(
+            "drystone_wall",
+            () -> new WallBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.25f)
+                            .explosionResistance(4.2f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> POLISHED_DRYSTONE = registerBlock(
+            "polished_drystone",
+            () -> new Block(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.25f)
+                            .explosionResistance(4.2f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            , ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> POLISHED_DRYSTONE_STAIRS = registerBlock(
+            "polished_drystone_stairs",
+            () -> new StairBlock(() -> ModBlocks.POLISHED_DRYSTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.25f)
+                            .explosionResistance(4.2f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> POLISHED_DRYSTONE_SLAB = registerBlock(
+            "polished_drystone_slab",
+            () -> new SlabBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.25f)
+                            .explosionResistance(4.2f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> CHISELED_DRYSTONE_BRICKS = registerBlock(
+            "chiseled_drystone_bricks",
+            () -> new Block(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.25f)
+                            .explosionResistance(4.2f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            , ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> DRYSTONE_BRICKS = registerBlock(
+            "drystone_bricks",
+            () -> new Block(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.25f)
+                            .explosionResistance(4.2f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            , ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> DRYSTONE_BRICK_STAIRS = registerBlock(
+            "drystone_brick_stairs",
+            () -> new StairBlock(() -> ModBlocks.DRYSTONE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.25f)
+                            .explosionResistance(4.2f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> DRYSTONE_BRICK_SLAB = registerBlock(
+            "drystone_brick_slab",
+            () -> new SlabBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.25f)
+                            .explosionResistance(4.2f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> DRYSTONE_BRICK_WALL = registerBlock(
+            "drystone_brick_wall",
+            () -> new WallBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.25f)
+                            .explosionResistance(4.2f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> DRYSTONE_TILES = registerBlock(
+            "drystone_tiles",
+            () -> new Block(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.25f)
+                            .explosionResistance(4.2f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            , ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> DRYSTONE_TILE_STAIRS = registerBlock(
+            "drystone_tile_stairs",
+            () -> new StairBlock(() -> ModBlocks.DRYSTONE_TILES.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.25f)
+                            .explosionResistance(4.2f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> DRYSTONE_TILE_SLAB = registerBlock(
+            "drystone_tile_slab",
+            () -> new SlabBlock(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.25f)
+                            .explosionResistance(4.2f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+
+
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){

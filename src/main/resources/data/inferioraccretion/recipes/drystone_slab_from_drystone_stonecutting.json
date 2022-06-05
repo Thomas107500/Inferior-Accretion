@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "inferioraccretion:drystone"
+  },
+  "result": "inferioraccretion:drystone_slab",
+  "count": 2
+}

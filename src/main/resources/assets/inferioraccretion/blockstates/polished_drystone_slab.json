@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "inferioraccretion:block/polished_drystone_slab"
+    },
+    "type=double": {
+      "model": "inferioraccretion:block/polished_drystone"
+    },
+    "type=top": {
+      "model": "inferioraccretion:block/polished_drystone_slab_top"
+    }
+  }
+}

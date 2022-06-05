@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S",
+    "S"
+  ],
+  "key": {
+    "S": {
+      "item": "inferioraccretion:drystone_slab"
+    }
+  },
+  "result": {
+    "item": "inferioraccretion:polished_drystone",
+    "count": 1
+  }
+}

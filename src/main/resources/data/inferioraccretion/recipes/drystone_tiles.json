@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "inferioraccretion:drystone_bricks"
+    }
+  },
+  "result": {
+    "item": "inferioraccretion:drystone_tiles",
+    "count": 6
+  }
+}

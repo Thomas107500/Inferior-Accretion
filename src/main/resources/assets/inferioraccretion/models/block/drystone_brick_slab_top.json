@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "inferioraccretion:block/drystone_bricks",
+    "top": "inferioraccretion:block/drystone_bricks",
+    "side": "inferioraccretion:block/drystone_bricks"
+  }
+}

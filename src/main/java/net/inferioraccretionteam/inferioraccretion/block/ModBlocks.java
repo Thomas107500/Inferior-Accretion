@@ -684,6 +684,26 @@ public class ModBlocks {
                             .requiresCorrectToolForDrops())
             ,ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
 
+    public static final RegistryObject<Block> LYCE_ORE = registerBlock(
+            "lyce_ore",
+            () -> new Block(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(0.75f)
+                            .explosionResistance(0.75f)
+                            .sound(SoundType.CALCITE)
+                            .requiresCorrectToolForDrops())
+            , ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
+    public static final RegistryObject<Block> BLOCK_OF_LYCE = registerBlock(
+            "block_of_lyce",
+            () -> new Block(
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops())
+            , ModCreativeModeTab.INFERIOR_ACCRETION_TAB);
+
 
 
 

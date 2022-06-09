@@ -69,6 +69,9 @@
   "block.inferioraccretion.drystone_tile_stairs": "Drystone Tile Stairs",
   "block.inferioraccretion.drystone_tile_slab": "Drystone Tile Slab",
 
+  "block.inferioraccretion.lyce_ore": "Lyce Ore",
+  "block.inferioraccretion.block_of_lyce": "Block of Lyce",
+
   "item.inferioraccretion.undead_hog_spawn_egg": "Undead Hog Spawn Egg",
   "item.inferioraccretion.rotten_hide": "Rotten Hide",
 
@@ -76,6 +79,7 @@
   "item.inferioraccretion.stale_tunic": "Stale Tunic",
   "item.inferioraccretion.stale_pants": "Stale Pants",
   "item.inferioraccretion.stale_boots": "Stale Boots",
+  "item.inferioraccretion.lyce": "Lyce",
 
   "itemGroup.inferioraccretiontab": "Inferior Accretion",
 

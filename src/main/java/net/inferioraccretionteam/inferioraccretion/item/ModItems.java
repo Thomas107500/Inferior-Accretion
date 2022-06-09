@@ -35,6 +35,9 @@ public class ModItems {
     public static final RegistryObject<Item> STALE_BOOTS = ITEMS.register("stale_boots",
             () -> new ArmorItem(ModArmorMaterials.STALE, EquipmentSlot.FEET,new Item.Properties().tab(ModCreativeModeTab.INFERIOR_ACCRETION_TAB)));
 
+    public static final RegistryObject<Item> LYCE = ITEMS.register("lyce",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.INFERIOR_ACCRETION_TAB)));
+
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

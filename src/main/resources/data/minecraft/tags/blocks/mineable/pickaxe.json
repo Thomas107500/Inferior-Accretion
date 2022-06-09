@@ -69,6 +69,9 @@
     "inferioraccretion:drystone_brick_wall",
     "inferioraccretion:drystone_tiles",
     "inferioraccretion:drystone_tile_stairs",
-    "inferioraccretion:drystone_tile_slab"
+    "inferioraccretion:drystone_tile_slab",
+
+    "inferioraccretion:lyce_ore",
+    "inferioraccretion:block_of_lyce"
   ]
 }

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-
+    "inferioraccretion:lyce_ore",
+    "inferioraccretion:block_of_lyce"
   ]
 }

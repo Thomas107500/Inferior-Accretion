@@ -3,7 +3,9 @@ package net.inferioraccretionteam.inferioraccretion.world.feature;
 import net.inferioraccretionteam.inferioraccretion.InferiorAccretion;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
+import net.minecraft.data.worldgen.features.CaveFeatures;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.world.level.chunk.ChunkGenerator;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.placement.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -40,6 +42,23 @@ public class ModPlacedFeatures {
                             InSquarePlacement.spread(),
                             HeightRangePlacement.uniform(VerticalAnchor.absolute(40), VerticalAnchor.absolute(146)),
                             BiomeFilter.biome())));
+
+    public static final RegistryObject<PlacedFeature> LIMESTONE_PLACED = PLACED_FEATURES.register("limestone_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.LIMESTONE.getHolder().get(),
+                    //veins per chunk
+                    List.of(CountPlacement.of(125) ,
+                            InSquarePlacement.spread(),
+                            PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT,
+                            BiomeFilter.biome())));
+
+    public static final RegistryObject<PlacedFeature> TROPICAL_CAVE_VEGETATION = PLACED_FEATURES.register("tropical_cave_vegetation",
+            () -> new PlacedFeature(ModConfiguredFeatures.TROPICAL_MOSS_PATCH.getHolder().get(),
+                    //veins per chunk
+                    List.of(CountPlacement.of(125) ,
+                            InSquarePlacement.spread(),
+                            HeightRangePlacement.uniform(VerticalAnchor.absolute(-53), VerticalAnchor.absolute(20)),
+                            BiomeFilter.biome())));
+
 
     public static void register(IEventBus eventBus){
         PLACED_FEATURES.register(eventBus);

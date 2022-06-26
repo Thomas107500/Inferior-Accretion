@@ -79,9 +79,9 @@ public class ModPlacedFeatures {
             });
 
     @SuppressWarnings("unused")
-    public static final RegistryObject<PlacedFeature> LIMESTONE_PLACED = PLACED_FEATURES.register("drystone_placed",
+    public static final RegistryObject<PlacedFeature> LIMESTONE_PLACED = PLACED_FEATURES.register("limestone_placed",
             () -> {
-                Optional<Holder<ConfiguredFeature<?, ?>>> limestoneHolder = ModConfiguredFeatures.DRYSTONE.getHolder();
+                Optional<Holder<ConfiguredFeature<?, ?>>> limestoneHolder = ModConfiguredFeatures.LIMESTONE.getHolder();
                 if (limestoneHolder.isPresent())
                 {
                     return new PlacedFeature(limestoneHolder.get(),
@@ -99,9 +99,9 @@ public class ModPlacedFeatures {
             });
 
     @SuppressWarnings("unused")
-    public static final RegistryObject<PlacedFeature> TROPICAL_CAVE_VEGETATION = PLACED_FEATURES.register("drystone_placed",
+    public static final RegistryObject<PlacedFeature> TROPICAL_CAVE_VEGETATION = PLACED_FEATURES.register("tropical_cave_vegetation",
             () -> {
-                Optional<Holder<ConfiguredFeature<?, ?>>> tropicalCaveVegetationHolder = ModConfiguredFeatures.DRYSTONE.getHolder();
+                Optional<Holder<ConfiguredFeature<?, ?>>> tropicalCaveVegetationHolder = ModConfiguredFeatures.TROPICAL_MOSS_PATCH.getHolder();
                 if (tropicalCaveVegetationHolder.isPresent())
                 {
                     return new PlacedFeature(tropicalCaveVegetationHolder.get(),

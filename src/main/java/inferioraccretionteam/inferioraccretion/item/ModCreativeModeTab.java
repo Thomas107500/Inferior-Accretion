@@ -1,6 +1,6 @@
-package net.inferioraccretionteam.inferioraccretion.item;
+package inferioraccretionteam.inferioraccretion.item;
 
-import net.inferioraccretionteam.inferioraccretion.block.ModBlocks;
+import inferioraccretionteam.inferioraccretion.block.ModBlocks;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 

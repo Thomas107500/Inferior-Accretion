@@ -1,12 +1,11 @@
-package net.inferioraccretionteam.inferioraccretion.item;
+package inferioraccretionteam.inferioraccretion.item;
 
-import net.inferioraccretionteam.inferioraccretion.InferiorAccretion;
+import inferioraccretionteam.inferioraccretion.InferiorAccretion;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 
 import java.util.function.Supplier;
@@ -25,7 +24,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     private final SoundEvent sound;
     private final float toughness;
     private final float knockbackResistance;
-    private final LazyLoadedValue<Ingredient> repairIngredient;
+    private final Supplier<Ingredient> repairIngredient;
 
     private ModArmorMaterials(String p_40474_, int p_40475_, int[] p_40476_, int p_40477_, SoundEvent p_40478_, float p_40479_, float p_40480_, Supplier<Ingredient> p_40481_) {
         this.name = p_40474_;
@@ -35,7 +34,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
         this.sound = p_40478_;
         this.toughness = p_40479_;
         this.knockbackResistance = p_40480_;
-        this.repairIngredient = new LazyLoadedValue<>(p_40481_);
+        this.repairIngredient = p_40481_;
     }
 
     public int getDurabilityForSlot(EquipmentSlot pSlot) {
@@ -50,14 +49,17 @@ public enum ModArmorMaterials implements ArmorMaterial {
         return this.enchantmentValue;
     }
 
+    @SuppressWarnings("NullableProblems")
     public SoundEvent getEquipSound() {
         return this.sound;
     }
 
+    @SuppressWarnings("NullableProblems")
     public Ingredient getRepairIngredient() {
         return this.repairIngredient.get();
     }
 
+    @SuppressWarnings("NullableProblems")
     public String getName() {
         return InferiorAccretion.MOD_ID + ":"+ this.name;
     }

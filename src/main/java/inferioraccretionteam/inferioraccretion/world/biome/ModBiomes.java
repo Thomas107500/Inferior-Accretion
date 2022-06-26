@@ -51,11 +51,6 @@ public class ModBiomes {
             .build());
 
 
-
-
-
-
-
     public static void register(IEventBus eventBus){
         BIOMES.register(eventBus);
     }

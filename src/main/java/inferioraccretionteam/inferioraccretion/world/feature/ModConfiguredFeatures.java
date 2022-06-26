@@ -5,15 +5,10 @@ import inferioraccretionteam.inferioraccretion.block.ModBlocks;
 import net.minecraft.core.Registry;
 import net.minecraft.data.worldgen.features.OreFeatures;
 import net.minecraft.data.worldgen.features.CaveFeatures;
-import net.minecraft.data.worldgen.features.FeatureUtils;
-import net.minecraft.data.worldgen.features.OreFeatures;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
-import net.minecraft.world.level.biome.Biome;
-import net.minecraft.world.level.biome.BiomeManager;
-import net.minecraft.world.level.biome.OverworldBiomeBuilder;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
@@ -38,35 +33,35 @@ public class ModConfiguredFeatures {
     //TODO: should spawn next to deepslate diamond instead, improvement needed
     @SuppressWarnings("unused")
     public static final RegistryObject<ConfiguredFeature<?,?>> ALABASTER = CONFIGURED_FEATURES.register("alabaster",
-            ()->new ConfiguredFeature<>(Feature.ORE,new OreConfiguration(
+            () -> new ConfiguredFeature<>(Feature.ORE,new OreConfiguration(
                     List.of(
                             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.ALABASTER.get().defaultBlockState())
                     ),16)));
 
     @SuppressWarnings("unused")
     public static final RegistryObject<ConfiguredFeature<?,?>> SERENE = CONFIGURED_FEATURES.register("serene",
-            ()->new ConfiguredFeature<>(Feature.ORE,new OreConfiguration(
+            () -> new ConfiguredFeature<>(Feature.ORE,new OreConfiguration(
                     List.of(
                             OreConfiguration.target(new BlockMatchTest(Blocks.SANDSTONE), ModBlocks.SERENE.get().defaultBlockState())
                     ),16)));
 
     @SuppressWarnings("unused")
     public static final RegistryObject<ConfiguredFeature<?,?>> DRYSTONE = CONFIGURED_FEATURES.register("drystone",
-            ()->new ConfiguredFeature<>(Feature.ORE,new OreConfiguration(
+            () -> new ConfiguredFeature<>(Feature.ORE,new OreConfiguration(
                     List.of(
                             OreConfiguration.target(new BlockMatchTest(Blocks.RED_TERRACOTTA), ModBlocks.DRYSTONE.get().defaultBlockState())
                     ),34)));
 
     @SuppressWarnings("unused")
     public static final RegistryObject<ConfiguredFeature<?,?>> LIMESTONE = CONFIGURED_FEATURES.register("limestone",
-            ()->new ConfiguredFeature<>(Feature.ORE,new OreConfiguration(
+            () -> new ConfiguredFeature<>(Feature.ORE,new OreConfiguration(
                     List.of(
                             OreConfiguration.target(OreFeatures.NATURAL_STONE, ModBlocks.LIMESTONE.get().defaultBlockState())
                     ),34)));
 
     @SuppressWarnings("unused")
     public static final RegistryObject<ConfiguredFeature<?,?>> TROPICAL_MOSS_PATCH = CONFIGURED_FEATURES.register("tropical_moss_patch",
-            ()-> new ConfiguredFeature<>(Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(
+            () -> new ConfiguredFeature<>(Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(
                     BlockTags.MOSS_REPLACEABLE,
                     BlockStateProvider.simple(Blocks.MOSS_BLOCK),
                     PlacementUtils.inlinePlaced(CaveFeatures.MOSS_VEGETATION),

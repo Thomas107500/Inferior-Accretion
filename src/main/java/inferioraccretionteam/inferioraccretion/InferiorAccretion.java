@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import inferioraccretionteam.inferioraccretion.block.ModBlocks;
 import inferioraccretionteam.inferioraccretion.entity.ModEntityTypes;
 import inferioraccretionteam.inferioraccretion.item.ModItems;
+import inferioraccretionteam.inferioraccretion.world.biome.ModBiomes;
 import inferioraccretionteam.inferioraccretion.world.biome.TropicalCaveRegion;
 import inferioraccretionteam.inferioraccretion.world.biome.surface_rule.TropicalCaveSurfaceRuleData;
 import inferioraccretionteam.inferioraccretion.world.feature.ModConfiguredFeatures;
@@ -41,6 +42,7 @@ public class InferiorAccretion
         ModEntityTypes.register(eventBus);
         ModConfiguredFeatures.register(eventBus);
         ModPlacedFeatures.register(eventBus);
+        ModBiomes.register(eventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

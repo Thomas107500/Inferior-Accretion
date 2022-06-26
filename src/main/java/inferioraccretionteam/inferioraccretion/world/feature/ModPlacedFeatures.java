@@ -23,100 +23,49 @@ public class ModPlacedFeatures {
 
     @SuppressWarnings("unused")
     public static final RegistryObject<PlacedFeature> ALABASTER_PLACED = PLACED_FEATURES.register("alabaster_placed",
-            () -> {
-                Optional<Holder<ConfiguredFeature<?, ?>>> alabasterHolder = ModConfiguredFeatures.ALABASTER.getHolder();
-                if (alabasterHolder.isPresent()) {
-                    return new PlacedFeature(alabasterHolder.get(),
+            () -> new PlacedFeature(ModConfiguredFeatures.ALABASTER.getHolder().get(),
                             //veins per chunk
                             List.of(CountPlacement.of(3) ,
                                     InSquarePlacement.spread(),
                                     HeightRangePlacement.triangle(VerticalAnchor.bottom(), VerticalAnchor.absolute(-45)),
-                                    BiomeFilter.biome()));
-                } else {
-                    LOGGER.warn("Alabaster holder optional is empty, ignoring...");
-                    return null;
-                }
-    });
+                                    BiomeFilter.biome()))
+                );
 
     @SuppressWarnings("unused")
     public static final RegistryObject<PlacedFeature> SERENE_PLACED = PLACED_FEATURES.register("serene_placed",
-            () -> {
-                Optional<Holder<ConfiguredFeature<?, ?>>> sereneHolder = ModConfiguredFeatures.SERENE.getHolder();
-                if (sereneHolder.isPresent())
-                {
-                    return new PlacedFeature(sereneHolder.get(),
+            () -> new PlacedFeature(ModConfiguredFeatures.SERENE.getHolder().get(),
                             //veins per chunk
                             List.of(CountPlacement.of(3),
                                     InSquarePlacement.spread(),
                                     HeightRangePlacement.triangle(VerticalAnchor.absolute(45), VerticalAnchor.absolute(62)),
-                                    BiomeFilter.biome()));
-                }
-                else
-                {
-                    LOGGER.warn("Serene holder optional is empty, ignoring...");
-                    return null;
-                }
-    });
+                                    BiomeFilter.biome())));
 
     @SuppressWarnings("unused")
     public static final RegistryObject<PlacedFeature> DRYSTONE_PLACED = PLACED_FEATURES.register("drystone_placed",
-            () -> {
-                Optional<Holder<ConfiguredFeature<?, ?>>> drystoneHolder = ModConfiguredFeatures.DRYSTONE.getHolder();
-                if (drystoneHolder.isPresent())
-                {
-                    return new PlacedFeature(drystoneHolder.get(),
+            () -> new PlacedFeature(ModConfiguredFeatures.DRYSTONE.getHolder().get(),
                             //veins per chunk
                             List.of(CountPlacement.of(4) ,
                                     InSquarePlacement.spread(),
                                     HeightRangePlacement.uniform(VerticalAnchor.absolute(40), VerticalAnchor.absolute(146)),
-                                    BiomeFilter.biome()));
-                }
-                else
-                {
-                    LOGGER.warn("Drystone holder optional is empty, ignoring...");
-                    return null;
-                }
-            });
+                                    BiomeFilter.biome())));
 
     @SuppressWarnings("unused")
     public static final RegistryObject<PlacedFeature> LIMESTONE_PLACED = PLACED_FEATURES.register("limestone_placed",
-            () -> {
-                Optional<Holder<ConfiguredFeature<?, ?>>> limestoneHolder = ModConfiguredFeatures.LIMESTONE.getHolder();
-                if (limestoneHolder.isPresent())
-                {
-                    return new PlacedFeature(limestoneHolder.get(),
+            () -> new PlacedFeature(ModConfiguredFeatures.LIMESTONE.getHolder().get(),
                             //veins per chunk
                             List.of(CountPlacement.of(125) ,
                                     InSquarePlacement.spread(),
                                     PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT,
-                                    BiomeFilter.biome()));
-                }
-                else
-                {
-                    LOGGER.warn("Limestone holder optional is empty, ignoring...");
-                    return null;
-                }
-            });
+                                    BiomeFilter.biome())));
 
     @SuppressWarnings("unused")
     public static final RegistryObject<PlacedFeature> TROPICAL_CAVE_VEGETATION = PLACED_FEATURES.register("tropical_cave_vegetation",
-            () -> {
-                Optional<Holder<ConfiguredFeature<?, ?>>> tropicalCaveVegetationHolder = ModConfiguredFeatures.TROPICAL_MOSS_PATCH.getHolder();
-                if (tropicalCaveVegetationHolder.isPresent())
-                {
-                    return new PlacedFeature(tropicalCaveVegetationHolder.get(),
+            () -> new PlacedFeature(ModConfiguredFeatures.TROPICAL_MOSS_PATCH.getHolder().get(),
                             //veins per chunk
                             List.of(CountPlacement.of(125) ,
                                     InSquarePlacement.spread(),
                                     HeightRangePlacement.uniform(VerticalAnchor.absolute(-53), VerticalAnchor.absolute(20)),
-                                    BiomeFilter.biome()));
-                }
-                else
-                {
-                    LOGGER.warn("Tropical Cave Vegetation holder optional is empty, ignoring...");
-                    return null;
-                }
-            });
+                                    BiomeFilter.biome())));
 
     public static void register(IEventBus eventBus){
         PLACED_FEATURES.register(eventBus);

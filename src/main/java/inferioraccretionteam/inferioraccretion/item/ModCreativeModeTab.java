@@ -7,6 +7,7 @@ import net.minecraft.world.item.ItemStack;
 public class ModCreativeModeTab {
     public static final CreativeModeTab INFERIOR_ACCRETION_TAB = new CreativeModeTab("inferioraccretiontab") {
         @Override
+        @SuppressWarnings("NullableProblems")
         public ItemStack makeIcon() {
             return new ItemStack(ModBlocks.ALABASTER.get().asItem());
         }

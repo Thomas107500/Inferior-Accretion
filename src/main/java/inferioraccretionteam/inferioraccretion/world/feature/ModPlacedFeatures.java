@@ -1,20 +1,15 @@
 package inferioraccretionteam.inferioraccretion.world.feature;
 
 import inferioraccretionteam.inferioraccretion.InferiorAccretion;
-import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
-import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.placement.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.List;
-import java.util.Optional;
-
-import static inferioraccretionteam.inferioraccretion.InferiorAccretion.LOGGER;
 
 public class ModPlacedFeatures {
 
@@ -23,7 +18,7 @@ public class ModPlacedFeatures {
 
     @SuppressWarnings("unused")
     public static final RegistryObject<PlacedFeature> ALABASTER_PLACED = PLACED_FEATURES.register("alabaster_placed",
-            () -> new PlacedFeature(ModConfiguredFeatures.ALABASTER.getHolder().get(),
+            () -> new PlacedFeature(ModConfiguredFeatures.ALABASTER.getHolder().orElseThrow(),
                             //veins per chunk
                             List.of(CountPlacement.of(3) ,
                                     InSquarePlacement.spread(),
@@ -33,7 +28,7 @@ public class ModPlacedFeatures {
 
     @SuppressWarnings("unused")
     public static final RegistryObject<PlacedFeature> SERENE_PLACED = PLACED_FEATURES.register("serene_placed",
-            () -> new PlacedFeature(ModConfiguredFeatures.SERENE.getHolder().get(),
+            () -> new PlacedFeature(ModConfiguredFeatures.SERENE.getHolder().orElseThrow(),
                             //veins per chunk
                             List.of(CountPlacement.of(3),
                                     InSquarePlacement.spread(),
@@ -42,7 +37,7 @@ public class ModPlacedFeatures {
 
     @SuppressWarnings("unused")
     public static final RegistryObject<PlacedFeature> DRYSTONE_PLACED = PLACED_FEATURES.register("drystone_placed",
-            () -> new PlacedFeature(ModConfiguredFeatures.DRYSTONE.getHolder().get(),
+            () -> new PlacedFeature(ModConfiguredFeatures.DRYSTONE.getHolder().orElseThrow(),
                             //veins per chunk
                             List.of(CountPlacement.of(4) ,
                                     InSquarePlacement.spread(),
@@ -51,7 +46,7 @@ public class ModPlacedFeatures {
 
     @SuppressWarnings("unused")
     public static final RegistryObject<PlacedFeature> LIMESTONE_PLACED = PLACED_FEATURES.register("limestone_placed",
-            () -> new PlacedFeature(ModConfiguredFeatures.LIMESTONE.getHolder().get(),
+            () -> new PlacedFeature(ModConfiguredFeatures.LIMESTONE.getHolder().orElseThrow(),
                             //veins per chunk
                             List.of(CountPlacement.of(125) ,
                                     InSquarePlacement.spread(),
@@ -60,7 +55,7 @@ public class ModPlacedFeatures {
 
     @SuppressWarnings("unused")
     public static final RegistryObject<PlacedFeature> TROPICAL_CAVE_VEGETATION = PLACED_FEATURES.register("tropical_cave_vegetation",
-            () -> new PlacedFeature(ModConfiguredFeatures.TROPICAL_MOSS_PATCH.getHolder().get(),
+            () -> new PlacedFeature(ModConfiguredFeatures.TROPICAL_MOSS_PATCH.getHolder().orElseThrow(),
                             //veins per chunk
                             List.of(CountPlacement.of(125) ,
                                     InSquarePlacement.spread(),

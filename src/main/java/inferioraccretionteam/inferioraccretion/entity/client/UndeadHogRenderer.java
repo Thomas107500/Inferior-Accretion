@@ -6,7 +6,6 @@ import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import org.jetbrains.annotations.NotNull;
 
 @OnlyIn(Dist.CLIENT)
 public class UndeadHogRenderer extends MobRenderer<UndeadHog, UndeadHogModel<UndeadHog>> {

@@ -3,7 +3,6 @@ package inferioraccretionteam.inferioraccretion.item;
 import inferioraccretionteam.inferioraccretion.InferiorAccretion;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -11,9 +10,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    STALE("stale", 5, new int[]{1, 2, 3, 1}, 15, SoundEvents.ARMOR_EQUIP_LEATHER, 0.0F, 0.0F, () -> {
-        return Ingredient.of(ModItems.ROTTEN_HIDE.get());
-    });
+    STALE("stale", 5, new int[]{1, 2, 3, 1}, 15, SoundEvents.ARMOR_EQUIP_LEATHER, 0.0F, 0.0F, () -> Ingredient.of(ModItems.ROTTEN_HIDE.get()));
 
 
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
@@ -26,7 +23,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     private final float knockbackResistance;
     private final Supplier<Ingredient> repairIngredient;
 
-    private ModArmorMaterials(String p_40474_, int p_40475_, int[] p_40476_, int p_40477_, SoundEvent p_40478_, float p_40479_, float p_40480_, Supplier<Ingredient> p_40481_) {
+    ModArmorMaterials(String p_40474_, int p_40475_, int[] p_40476_, int p_40477_, SoundEvent p_40478_, float p_40479_, float p_40480_, Supplier<Ingredient> p_40481_) {
         this.name = p_40474_;
         this.durabilityMultiplier = p_40475_;
         this.slotProtections = p_40476_;

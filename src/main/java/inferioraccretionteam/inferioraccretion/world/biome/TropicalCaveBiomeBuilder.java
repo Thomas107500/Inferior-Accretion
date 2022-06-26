@@ -30,9 +30,7 @@ public class TropicalCaveBiomeBuilder extends OverworldBiomeBuilder
 				.offset(0L)
 				.build();
 		if (!SharedConstants.debugGenerateSquareTerrainWithoutNoise) {
-			tropicalCavePoints.forEach((point) -> {
-				mapper.accept(Pair.of(point, ModBiomes.TROPICAL_CAVE.getKey()));
-			});
+			tropicalCavePoints.forEach((point) -> mapper.accept(Pair.of(point, ModBiomes.TROPICAL_CAVE.getKey())));
 		}
 	}
 }

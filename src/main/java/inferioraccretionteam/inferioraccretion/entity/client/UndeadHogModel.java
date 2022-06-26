@@ -1,8 +1,8 @@
-package net.inferioraccretionteam.inferioraccretion.entity.client;
+package inferioraccretionteam.inferioraccretion.entity.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import net.inferioraccretionteam.inferioraccretion.InferiorAccretion;
+import inferioraccretionteam.inferioraccretion.InferiorAccretion;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;
@@ -57,11 +57,13 @@ public class UndeadHogModel<T extends Entity> extends EntityModel<T> {
     }
 
     @Override
+    @SuppressWarnings("NullableProblems")
     public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
 
     }
 
     @Override
+    @SuppressWarnings("NullableProblems")
     public void renderToBuffer(PoseStack poseStack, VertexConsumer buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
         body.render(poseStack, buffer, packedLight, packedOverlay);
         head.render(poseStack, buffer, packedLight, packedOverlay);

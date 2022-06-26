@@ -1,11 +1,11 @@
-package net.inferioraccretionteam.inferioraccretion.entity.custom;
+package inferioraccretionteam.inferioraccretion.entity.custom;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
 import com.mojang.datafixers.util.Pair;
 import com.mojang.serialization.Dynamic;
-import net.inferioraccretionteam.inferioraccretion.entity.ModEntityTypes;
-import net.inferioraccretionteam.inferioraccretion.item.ModItems;
+import inferioraccretionteam.inferioraccretion.entity.ModEntityTypes;
+import inferioraccretionteam.inferioraccretion.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -22,10 +22,8 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.monster.Zoglin;
 import net.minecraft.world.entity.monster.hoglin.HoglinBase;
 import net.minecraft.world.entity.schedule.Activity;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.Level;
-import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Optional;
 
@@ -43,6 +41,7 @@ public class UndeadHog extends Zoglin implements Enemy, HoglinBase{
         return Brain.provider(MEMORY_TYPES, SENSOR_TYPES);
     }
 
+    @SuppressWarnings("NullableProblems")
     protected Brain<?> makeBrain(Dynamic<?> pDynamic) {
         //Brain<UndeadHog> brain = this.brainProvider().makeBrain(pDynamic);
         Brain<UndeadHog> brain = this.hogBrainProvider().makeBrain(pDynamic);

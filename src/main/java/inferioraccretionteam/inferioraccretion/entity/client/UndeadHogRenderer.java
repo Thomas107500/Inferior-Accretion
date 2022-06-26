@@ -1,16 +1,12 @@
-package net.inferioraccretionteam.inferioraccretion.entity.client;
+package inferioraccretionteam.inferioraccretion.entity.client;
 
-import net.inferioraccretionteam.inferioraccretion.entity.custom.UndeadHog;
-import net.minecraft.client.model.HoglinModel;
-import net.minecraft.client.model.geom.ModelLayers;
+import inferioraccretionteam.inferioraccretion.entity.custom.UndeadHog;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.monster.Zoglin;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
+import org.jetbrains.annotations.NotNull;
 
 @OnlyIn(Dist.CLIENT)
 public class UndeadHogRenderer extends MobRenderer<UndeadHog, UndeadHogModel<UndeadHog>> {
@@ -21,6 +17,7 @@ public class UndeadHogRenderer extends MobRenderer<UndeadHog, UndeadHogModel<Und
     }
 
     @Override
+    @SuppressWarnings("NullableProblems")
     public ResourceLocation getTextureLocation(UndeadHog pEntity) {
         return UNDEADHOG_LOCATION;
     }

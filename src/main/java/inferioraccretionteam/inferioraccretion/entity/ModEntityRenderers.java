@@ -1,9 +1,8 @@
-package net.inferioraccretionteam.inferioraccretion.entity;
+package inferioraccretionteam.inferioraccretion.entity;
 
-import net.inferioraccretionteam.inferioraccretion.InferiorAccretion;
-import net.inferioraccretionteam.inferioraccretion.entity.client.UndeadHogModel;
-import net.inferioraccretionteam.inferioraccretion.entity.client.UndeadHogRenderer;
-import net.inferioraccretionteam.inferioraccretion.entity.custom.UndeadHog;
+import inferioraccretionteam.inferioraccretion.InferiorAccretion;
+import inferioraccretionteam.inferioraccretion.entity.client.UndeadHogModel;
+import inferioraccretionteam.inferioraccretion.entity.client.UndeadHogRenderer;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

@@ -3,6 +3,7 @@ package inferioraccretionteam.inferioraccretion.world.feature;
 import inferioraccretionteam.inferioraccretion.InferiorAccretion;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.placement.*;
@@ -57,9 +58,6 @@ public class ModPlacedFeatures {
                 }
     });
 
-    /*
-
-     */
     @SuppressWarnings("unused")
     public static final RegistryObject<PlacedFeature> DRYSTONE_PLACED = PLACED_FEATURES.register("drystone_placed",
             () -> {
@@ -76,6 +74,46 @@ public class ModPlacedFeatures {
                 else
                 {
                     LOGGER.warn("Drystone holder optional is empty, ignoring...");
+                    return null;
+                }
+            });
+
+    @SuppressWarnings("unused")
+    public static final RegistryObject<PlacedFeature> LIMESTONE_PLACED = PLACED_FEATURES.register("drystone_placed",
+            () -> {
+                Optional<Holder<ConfiguredFeature<?, ?>>> limestoneHolder = ModConfiguredFeatures.DRYSTONE.getHolder();
+                if (limestoneHolder.isPresent())
+                {
+                    return new PlacedFeature(limestoneHolder.get(),
+                            //veins per chunk
+                            List.of(CountPlacement.of(125) ,
+                                    InSquarePlacement.spread(),
+                                    PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT,
+                                    BiomeFilter.biome()));
+                }
+                else
+                {
+                    LOGGER.warn("Limestone holder optional is empty, ignoring...");
+                    return null;
+                }
+            });
+
+    @SuppressWarnings("unused")
+    public static final RegistryObject<PlacedFeature> TROPICAL_CAVE_VEGETATION = PLACED_FEATURES.register("drystone_placed",
+            () -> {
+                Optional<Holder<ConfiguredFeature<?, ?>>> tropicalCaveVegetationHolder = ModConfiguredFeatures.DRYSTONE.getHolder();
+                if (tropicalCaveVegetationHolder.isPresent())
+                {
+                    return new PlacedFeature(tropicalCaveVegetationHolder.get(),
+                            //veins per chunk
+                            List.of(CountPlacement.of(125) ,
+                                    InSquarePlacement.spread(),
+                                    HeightRangePlacement.uniform(VerticalAnchor.absolute(-53), VerticalAnchor.absolute(20)),
+                                    BiomeFilter.biome()));
+                }
+                else
+                {
+                    LOGGER.warn("Tropical Cave Vegetation holder optional is empty, ignoring...");
                     return null;
                 }
             });

@@ -4,6 +4,8 @@ import com.mojang.logging.LogUtils;
 import inferioraccretionteam.inferioraccretion.block.ModBlocks;
 import inferioraccretionteam.inferioraccretion.entity.ModEntityTypes;
 import inferioraccretionteam.inferioraccretion.item.ModItems;
+import inferioraccretionteam.inferioraccretion.world.biome.TropicalCaveRegion;
+import inferioraccretionteam.inferioraccretion.world.biome.surface_rule.TropicalCaveSurfaceRuleData;
 import inferioraccretionteam.inferioraccretion.world.feature.ModConfiguredFeatures;
 import inferioraccretionteam.inferioraccretion.world.feature.ModPlacedFeatures;
 import net.minecraft.resources.ResourceLocation;
@@ -47,9 +49,9 @@ public class InferiorAccretion
     private void setup(final FMLCommonSetupEvent event)
     {
         event.enqueueWork(() -> {
-            Regions.register(new net.inferioraccretionteam.inferioraccretion.world.biome.TropicalCaveRegion(new ResourceLocation(MOD_ID, "tropical_cave_region"), RegionType.OVERWORLD, 2));
+            Regions.register(new TropicalCaveRegion(new ResourceLocation(MOD_ID, "tropical_cave_region"), RegionType.OVERWORLD, 2));
 
-            SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, net.inferioraccretionteam.inferioraccretion.world.biome.surface_rule.TropicalCaveSurfaceRuleData.makeRules());
+            SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, TropicalCaveSurfaceRuleData.makeRules());
         });
     }
 }

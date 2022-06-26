@@ -177,7 +177,7 @@ dependencies {
     // For more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
-    implementation fg.deobf('com.github.glitchfiend:TerraBlender-forge:1.18.2-1.1.0.102')
+    implementation fg.deobf('com.github.glitchfiend:TerraBlender-forge:1.19-2.0.0.112')
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
 

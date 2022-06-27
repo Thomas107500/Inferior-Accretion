@@ -4,8 +4,13 @@ import com.mojang.logging.LogUtils;
 import inferioraccretionteam.inferioraccretion.block.ModBlocks;
 import inferioraccretionteam.inferioraccretion.entity.ModEntityTypes;
 import inferioraccretionteam.inferioraccretion.item.ModItems;
-import inferioraccretionteam.inferioraccretion.world.feature.ModConfiguredFeatures;
-import inferioraccretionteam.inferioraccretion.world.feature.ModPlacedFeatures;
+import inferioraccretionteam.inferioraccretion.world.biome.ModBiomes;
+import inferioraccretionteam.inferioraccretion.world.biome.TropicalCaveRegion;
+import inferioraccretionteam.inferioraccretion.world.level.levelgen.feature.ModConfiguredFeatures;
+import inferioraccretionteam.inferioraccretion.world.level.levelgen.feature.ModFeatures;
+import inferioraccretionteam.inferioraccretion.world.level.levelgen.feature.ModPlacedFeatures;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.levelgen.SurfaceRules;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -35,6 +40,8 @@ public class InferiorAccretion
         ModEntityTypes.register(eventBus);
         ModConfiguredFeatures.register(eventBus);
         ModPlacedFeatures.register(eventBus);
+        ModFeatures.register(eventBus);
+        ModBiomes.register(eventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -42,5 +49,10 @@ public class InferiorAccretion
 
     private void setup(final FMLCommonSetupEvent event)
     {
+        event.enqueueWork(() -> {
+            Regions.register(new TropicalCaveRegion(new ResourceLocation(MOD_ID, "tropical_cave_region"), RegionType.OVERWORLD, 2));
+
+            SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, SurfaceRules.sequence());
+        });
     }
 }

@@ -23,7 +23,6 @@ import net.minecraft.world.entity.monster.Zoglin;
 import net.minecraft.world.entity.monster.hoglin.HoglinBase;
 import net.minecraft.world.entity.schedule.Activity;
 import net.minecraft.world.level.Level;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.Optional;
 
@@ -59,11 +58,12 @@ public class UndeadHog extends Zoglin implements Enemy, HoglinBase{
     }
 
     private static void initIdleActivity(Brain<UndeadHog> brain) {
-        brain.addActivity(Activity.IDLE, 10, ImmutableList.of(new StartAttacking<UndeadHog>(UndeadHog::findNearestValidAttackTarget), new RunSometimes<UndeadHog>(new SetEntityLookTarget(8.0F), UniformInt.of(30, 60)), new RunOne<UndeadHog>(ImmutableList.of(Pair.of(new RandomStroll(0.4F), 2), Pair.of(new SetWalkTargetFromLookTarget(0.4F, 3), 2), Pair.of(new DoNothing(30, 60), 1)))));
+        brain.addActivity(Activity.IDLE, 10, ImmutableList.of(new StartAttacking<>(UndeadHog::findNearestValidAttackTarget), new RunSometimes<>(new SetEntityLookTarget(8.0F), UniformInt.of(30, 60)), new RunOne<>(ImmutableList.of(Pair.of(new RandomStroll(0.4F), 2), Pair.of(new SetWalkTargetFromLookTarget(0.4F, 3), 2), Pair.of(new DoNothing(30, 60), 1)))));
     }
 
+    @SuppressWarnings("unchecked")
     private static void initFightActivity(Brain<UndeadHog> brain) {
-        brain.addActivityAndRemoveMemoryWhenStopped(Activity.FIGHT, 10, ImmutableList.<net.minecraft.world.entity.ai.behavior.Behavior<net.minecraft.world.entity.Mob>>of(new SetWalkTargetFromAttackTargetIfTargetOutOfReach(1.0F), (net.minecraft.world.entity.ai.behavior.Behavior<net.minecraft.world.entity.Mob>)(net.minecraft.world.entity.ai.behavior.Behavior)new RunIf<Zoglin>(Zoglin::isAdult, new MeleeAttack(40)), (net.minecraft.world.entity.ai.behavior.Behavior<net.minecraft.world.entity.Mob>)(net.minecraft.world.entity.ai.behavior.Behavior)new RunIf<Zoglin>(Zoglin::isBaby, new MeleeAttack(15)), new StopAttackingIfTargetInvalid()), MemoryModuleType.ATTACK_TARGET);
+        brain.addActivityAndRemoveMemoryWhenStopped(Activity.FIGHT, 10, ImmutableList.<net.minecraft.world.entity.ai.behavior.Behavior<net.minecraft.world.entity.Mob>>of(new SetWalkTargetFromAttackTargetIfTargetOutOfReach(1.0F), (net.minecraft.world.entity.ai.behavior.Behavior<net.minecraft.world.entity.Mob>)(net.minecraft.world.entity.ai.behavior.Behavior<?>)new RunIf<>(Zoglin::isAdult, new MeleeAttack(40)), (net.minecraft.world.entity.ai.behavior.Behavior<net.minecraft.world.entity.Mob>)(net.minecraft.world.entity.ai.behavior.Behavior<?>) new RunIf<>(Zoglin::isBaby, new MeleeAttack(15)), new StopAttackingIfTargetInvalid<>()), MemoryModuleType.ATTACK_TARGET);
     }
 
     private Optional<? extends LivingEntity> findNearestValidAttackTarget() {
@@ -83,7 +83,7 @@ public class UndeadHog extends Zoglin implements Enemy, HoglinBase{
 
 
     public static AttributeSupplier setAttributes() {
-        return Monster.createMonsterAttributes().add(Attributes.MAX_HEALTH, 40.0D).add(Attributes.MOVEMENT_SPEED, (double)0.3F).add(Attributes.KNOCKBACK_RESISTANCE, (double)0.6F).add(Attributes.ATTACK_KNOCKBACK, 1.0D).add(Attributes.ATTACK_DAMAGE, 6.0D).build();
+        return Monster.createMonsterAttributes().add(Attributes.MAX_HEALTH, 40.0).add(Attributes.MOVEMENT_SPEED, 0.3).add(Attributes.KNOCKBACK_RESISTANCE, 0.6).add(Attributes.ATTACK_KNOCKBACK, 1.0).add(Attributes.ATTACK_DAMAGE, 6.0).build();
     }
 
     @Override

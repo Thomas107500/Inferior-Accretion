@@ -83,5 +83,7 @@
 
   "itemGroup.inferioraccretiontab": "Inferior Accretion",
 
-  "entity.inferioraccretion.undead_hog": "Undead Hog"
+  "entity.inferioraccretion.undead_hog": "Undead Hog",
+
+  "biome.inferioraccretion.tropical_cave": "Tropical Cave"
 }

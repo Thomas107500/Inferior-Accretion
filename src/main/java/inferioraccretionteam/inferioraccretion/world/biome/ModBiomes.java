@@ -43,7 +43,7 @@ public class ModBiomes {
             .generationSettings(new BiomeGenerationSettings.Builder()
                     .addFeature(GenerationStep.Decoration.TOP_LAYER_MODIFICATION, ModPlacedFeatures.LIMESTONE_CAVE_COVER.getHolder().orElseThrow())
                     .addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.TROPICAL_CAVE_FLOOR_VEGETATION.getHolder().orElseThrow())
-                    //.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.TROPICAL_CAVE_BAMBOO.getHolder().orElseThrow())
+                    .addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.TROPICAL_CAVE_BAMBOO.getHolder().orElseThrow())
                     .build())
             .specialEffects(new BiomeSpecialEffects.Builder()
                     .fogColor(12638463)

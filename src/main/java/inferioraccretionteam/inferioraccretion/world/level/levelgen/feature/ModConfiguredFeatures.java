@@ -8,6 +8,7 @@ import net.minecraft.data.worldgen.features.OreFeatures;
 import net.minecraft.data.worldgen.features.CaveFeatures;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.util.valueproviders.ClampedNormalInt;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Blocks;
@@ -56,7 +57,7 @@ public class ModConfiguredFeatures {
     @SuppressWarnings("unused")
     public static final RegistryObject<ConfiguredFeature<?,?>> LIMESTONE_CAVE_COVER = CONFIGURED_FEATURES.register("limestone",
             () -> new ConfiguredFeature<>(ModFeatures.CAVE_COVER.get(), new CaveCoverConfiguration(
-                    ModBlocks.LIMESTONE.get().defaultBlockState(), 12)));
+                    ModBlocks.LIMESTONE.get().defaultBlockState(), ClampedNormalInt.of(12.0f, 3.0f, 8, 16))));
 
     @SuppressWarnings("unused")
     public static final RegistryObject<ConfiguredFeature<?,?>> TROPICAL_MOSS_PATCH = CONFIGURED_FEATURES.register("tropical_moss_patch",

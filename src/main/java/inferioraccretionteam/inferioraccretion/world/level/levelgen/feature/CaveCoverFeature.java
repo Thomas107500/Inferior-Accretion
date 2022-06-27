@@ -3,9 +3,11 @@ package inferioraccretionteam.inferioraccretion.world.level.levelgen.feature;
 import com.mojang.serialization.Codec;
 import inferioraccretionteam.inferioraccretion.world.level.levelgen.feature.configurations.CaveCoverConfiguration;
 import net.minecraft.core.BlockPos;
+import net.minecraft.tags.FluidTags;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
+import net.minecraft.world.level.material.Fluids;
 
 public class CaveCoverFeature extends Feature<CaveCoverConfiguration>
 {
@@ -17,8 +19,9 @@ public class CaveCoverFeature extends Feature<CaveCoverConfiguration>
 	@Override
 	public boolean place(FeaturePlaceContext<CaveCoverConfiguration> pContext)
 	{
-		int sphereRadius = pContext.config().sphereRadius;
-		if (pContext.level().isEmptyBlock(pContext.origin()))
+		int sphereRadius = pContext.config().sphereRadius.sample(pContext.random());
+		if (pContext.level().isEmptyBlock(pContext.origin()) || pContext.level().isWaterAt(pContext.origin())
+				|| pContext.level().isFluidAtPosition(pContext.origin(), (fs) -> fs.is(FluidTags.LAVA)))
 		{
 			for (int i = -sphereRadius; i <= sphereRadius; i++)
 			{

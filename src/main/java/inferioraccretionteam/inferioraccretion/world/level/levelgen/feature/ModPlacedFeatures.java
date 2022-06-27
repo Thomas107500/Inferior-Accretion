@@ -1,8 +1,7 @@
-package inferioraccretionteam.inferioraccretion.world.feature;
+package inferioraccretionteam.inferioraccretion.world.level.levelgen.feature;
 
 import inferioraccretionteam.inferioraccretion.InferiorAccretion;
 import net.minecraft.core.Registry;
-import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.placement.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -45,13 +44,13 @@ public class ModPlacedFeatures {
                                     BiomeFilter.biome())));
 
     @SuppressWarnings("unused")
-    public static final RegistryObject<PlacedFeature> LIMESTONE_PLACED = PLACED_FEATURES.register("limestone_placed",
-            () -> new PlacedFeature(ModConfiguredFeatures.LIMESTONE.getHolder().orElseThrow(),
-                            //veins per chunk
-                            List.of(CountPlacement.of(125) ,
-                                    InSquarePlacement.spread(),
-                                    PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT,
-                                    BiomeFilter.biome())));
+    public static final RegistryObject<PlacedFeature> LIMESTONE_CAVE_COVER = PLACED_FEATURES.register("limestone_cave_cover",
+            () -> new PlacedFeature(ModConfiguredFeatures.LIMESTONE_CAVE_COVER.getHolder().orElseThrow(),
+                    //veins per chunk
+                    List.of(CountPlacement.of(256),
+                            InSquarePlacement.spread(),
+                            HeightRangePlacement.uniform(VerticalAnchor.absolute(-53), VerticalAnchor.absolute(20)),
+                            BiomeFilter.biome())));
 
     @SuppressWarnings("unused")
     public static final RegistryObject<PlacedFeature> TROPICAL_CAVE_VEGETATION = PLACED_FEATURES.register("tropical_cave_vegetation",

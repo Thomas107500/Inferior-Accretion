@@ -1,7 +1,7 @@
 package inferioraccretionteam.inferioraccretion.world.biome;
 
 import inferioraccretionteam.inferioraccretion.InferiorAccretion;
-import inferioraccretionteam.inferioraccretion.world.feature.ModPlacedFeatures;
+import inferioraccretionteam.inferioraccretion.world.level.levelgen.feature.ModPlacedFeatures;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.EntityType;
@@ -39,7 +39,7 @@ public class ModBiomes {
                     .addSpawn(MobCategory.WATER_AMBIENT, new MobSpawnSettings.SpawnerData(EntityType.TROPICAL_FISH, 25, 8, 8))
                     .build())
             .generationSettings(new BiomeGenerationSettings.Builder()
-                    .addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, ModPlacedFeatures.LIMESTONE_PLACED.getHolder().orElseThrow())
+                    .addFeature(GenerationStep.Decoration.TOP_LAYER_MODIFICATION, ModPlacedFeatures.LIMESTONE_CAVE_COVER.getHolder().orElseThrow())
                     .addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.TROPICAL_CAVE_VEGETATION.getHolder().orElseThrow())
                     .build())
             .specialEffects(new BiomeSpecialEffects.Builder()

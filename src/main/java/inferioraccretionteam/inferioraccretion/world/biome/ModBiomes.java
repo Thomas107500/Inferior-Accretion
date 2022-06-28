@@ -3,8 +3,6 @@ package inferioraccretionteam.inferioraccretion.world.biome;
 import inferioraccretionteam.inferioraccretion.InferiorAccretion;
 import inferioraccretionteam.inferioraccretion.world.level.levelgen.feature.ModPlacedFeatures;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
-import net.minecraft.data.worldgen.features.VegetationFeatures;
-import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;

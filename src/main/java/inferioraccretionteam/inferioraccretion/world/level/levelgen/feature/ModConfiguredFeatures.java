@@ -65,12 +65,12 @@ public class ModConfiguredFeatures {
 
     @SuppressWarnings("unused")
     public static final RegistryObject<ConfiguredFeature<?,?>> TROPICAL_CAVE_VEGETATION = CONFIGURED_FEATURES.register("tropical_cave_vegetation",
-            () -> new ConfiguredFeature<>(ModFeatures.SIMPLE_BLOCK_WITH_BAMBOO.get(), new SimpleBlockWithBambooConfiguration(0.5F, new WeightedStateProvider(
+            () -> new ConfiguredFeature<>(ModFeatures.SIMPLE_BLOCK_WITH_BAMBOO.get(), new SimpleBlockWithBambooConfiguration(1.0F, new WeightedStateProvider(
                     SimpleWeightedRandomList.<BlockState>builder()
                             .add(Blocks.MOSS_CARPET.defaultBlockState(), 22)
                             .add(Blocks.GRASS.defaultBlockState(), 44)
                             .add(Blocks.TALL_GRASS.defaultBlockState(), 8)
-                            .add(Blocks.BAMBOO.defaultBlockState(), 10)
+                            .add(Blocks.BAMBOO.defaultBlockState(), 5)
             ))));
 
     @SuppressWarnings("unused")

@@ -33,6 +33,7 @@ public class CaveCoverFeature extends Feature<CaveCoverConfiguration>
 							BlockPos pos = pContext.origin().offset(i, j, k);
 							BlockState state = pContext.level().getBlockState(pos);
 							if (state.getTags().anyMatch((tag) -> tag.toString().contains("stone"))
+									&& state.getBlock().defaultDestroyTime() != -1.0f
 									&& pContext.level().ensureCanWrite(pos))
 							{
 								pContext.level().setBlock(pos, pContext.config().state(), 3);

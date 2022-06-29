@@ -1,14 +1,14 @@
 {
   "replace": false,
   "values": [
-    "inferioraccretion:limestone_wall",
-    "inferioraccretion:alabaster_wall",
-    "inferioraccretion:travertine_wall",
-    "inferioraccretion:travertine_brick_wall",
-    "inferioraccretion:russet_wall",
-    "inferioraccretion:russet_brick_wall",
-    "inferioraccretion:serene_wall",
-    "inferioraccretion:drystone_wall",
-    "inferioraccretion:drystone_brick_wall"
+    "inferior_accretion:limestone_wall",
+    "inferior_accretion:alabaster_wall",
+    "inferior_accretion:travertine_wall",
+    "inferior_accretion:travertine_brick_wall",
+    "inferior_accretion:russet_wall",
+    "inferior_accretion:russet_brick_wall",
+    "inferior_accretion:serene_wall",
+    "inferior_accretion:drystone_wall",
+    "inferior_accretion:drystone_brick_wall"
   ]
 }

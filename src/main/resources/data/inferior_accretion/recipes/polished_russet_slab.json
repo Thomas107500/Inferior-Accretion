@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "inferior_accretion:polished_russet"
+    }
+  },
+  "result": {
+    "item": "inferior_accretion:polished_russet_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "inferior_accretion:block/russet",
+    "top": "inferior_accretion:block/russet",
+    "side": "inferior_accretion:block/russet"
+  }
+}

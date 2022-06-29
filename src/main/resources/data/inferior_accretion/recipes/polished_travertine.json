@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S",
+    "S"
+  ],
+  "key": {
+    "S": {
+      "item": "inferior_accretion:travertine_slab"
+    }
+  },
+  "result": {
+    "item": "inferior_accretion:polished_travertine",
+    "count": 1
+  }
+}

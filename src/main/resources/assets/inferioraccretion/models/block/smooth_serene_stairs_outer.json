@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "inferioraccretion:block/serene_bottom",
-    "top": "inferioraccretion:block/serene_bottom",
-    "side": "inferioraccretion:block/serene_bottom"
-  }
-}

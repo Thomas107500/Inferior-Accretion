@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "inferior_accretion:drystone"
+    }
+  },
+  "result": {
+    "item": "inferior_accretion:drystone_slab",
+    "count": 6
+  }
+}

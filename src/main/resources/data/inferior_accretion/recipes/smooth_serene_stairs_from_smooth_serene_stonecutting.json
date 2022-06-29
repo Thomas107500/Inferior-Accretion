@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "inferior_accretion:smooth_serene"
+  },
+  "result": "inferior_accretion:smooth_serene_stairs",
+  "count": 1
+}

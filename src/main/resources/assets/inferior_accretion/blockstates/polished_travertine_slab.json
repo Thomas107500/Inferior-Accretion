@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "inferior_accretion:block/polished_travertine_slab"
+    },
+    "type=double": {
+      "model": "inferior_accretion:block/polished_travertine"
+    },
+    "type=top": {
+      "model": "inferior_accretion:block/polished_travertine_slab_top"
+    }
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "inferioraccretion:alabaster"
-  },
-  "result": "inferioraccretion:alabaster_slab",
-  "count": 2
-}

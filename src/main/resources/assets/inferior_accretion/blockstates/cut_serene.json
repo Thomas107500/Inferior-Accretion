@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "inferior_accretion:block/cut_serene_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "inferior_accretion:block/cut_serene"
+    },
+    "axis=z": {
+      "model": "inferior_accretion:block/cut_serene_horizontal",
+      "x": 90
+    }
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "inferioraccretion:block/cut_serene_top",
-    "top": "inferioraccretion:block/cut_serene_top",
-    "side": "inferioraccretion:block/cut_serene"
-  }
-}

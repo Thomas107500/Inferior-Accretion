@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "inferior_accretion:drystone"
+  },
+  "result": "inferior_accretion:drystone_wall",
+  "count": 1
+}

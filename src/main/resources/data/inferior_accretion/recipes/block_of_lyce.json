@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LLL",
+    "LLL",
+    "LLL"
+  ],
+  "key": {
+    "L": {
+      "item": "inferior_accretion:lyce"
+    }
+  },
+  "result": {
+    "item": "inferior_accretion:block_of_lyce",
+    "count": 1
+  }
+}

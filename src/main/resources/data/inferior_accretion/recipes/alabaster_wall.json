@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "inferior_accretion:alabaster"
+    }
+  },
+  "result": {
+    "item": "inferior_accretion:alabaster_wall",
+    "count": 6
+  }
+}

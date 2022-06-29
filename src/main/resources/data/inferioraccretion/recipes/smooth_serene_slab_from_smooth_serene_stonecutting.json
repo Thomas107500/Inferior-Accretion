@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "inferioraccretion:smooth_serene"
-  },
-  "result": "inferioraccretion:smooth_serene_slab",
-  "count": 2
-}

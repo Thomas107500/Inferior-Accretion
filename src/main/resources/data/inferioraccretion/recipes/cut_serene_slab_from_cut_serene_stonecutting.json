@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "inferioraccretion:cut_serene"
-  },
-  "result": "minecraft:cut_serene_slab",
-  "count": 2
-}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "inferioraccretion:drystone_bricks"
-  },
-  "result": "inferioraccretion:chiseled_drystone_bricks",
-  "count": 1
-}

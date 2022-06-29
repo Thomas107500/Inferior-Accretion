@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "inferioraccretion:drystone_tiles"
-  },
-  "result": "inferioraccretion:drystone_tile_stairs",
-  "count": 1
-}

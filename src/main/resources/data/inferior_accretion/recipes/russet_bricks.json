@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "inferior_accretion:russet"
+    }
+  },
+  "result": {
+    "item": "inferior_accretion:russet_bricks",
+    "count": 4
+  }
+}

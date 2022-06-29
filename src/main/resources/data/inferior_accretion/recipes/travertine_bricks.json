@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "inferior_accretion:travertine"
+    }
+  },
+  "result": {
+    "item": "inferior_accretion:travertine_bricks",
+    "count": 4
+  }
+}

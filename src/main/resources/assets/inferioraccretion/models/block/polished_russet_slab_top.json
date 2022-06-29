@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "inferioraccretion:block/polished_russet",
-    "top": "inferioraccretion:block/polished_russet",
-    "side": "inferioraccretion:block/polished_russet"
-  }
-}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "inferior_accretion:limestone"
+    }
+  },
+  "result": {
+    "item": "inferior_accretion:limestone_slab",
+    "count": 6
+  }
+}

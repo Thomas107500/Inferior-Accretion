@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "inferior_accretion:serene"
+  },
+  "result": "inferior_accretion:serene_wall",
+  "count": 1
+}

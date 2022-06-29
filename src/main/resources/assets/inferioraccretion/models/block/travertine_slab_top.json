@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "inferioraccretion:block/travertine",
-    "top": "inferioraccretion:block/travertine",
-    "side": "inferioraccretion:block/travertine"
-  }
-}

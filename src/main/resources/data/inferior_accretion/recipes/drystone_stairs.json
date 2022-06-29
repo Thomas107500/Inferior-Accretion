@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "inferior_accretion:drystone"
+    }
+  },
+  "result": {
+    "item": "inferior_accretion:drystone_stairs",
+    "count": 4
+  }
+}

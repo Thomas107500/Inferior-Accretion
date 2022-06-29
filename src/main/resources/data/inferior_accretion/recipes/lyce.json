@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "inferior_accretion:block_of_lyce"
+    }
+  ],
+  "result": {
+    "item": "inferior_accretion:lyce",
+    "count": 9
+  }
+}

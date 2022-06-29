@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "inferior_accretion:polished_drystone"
+  },
+  "result": "inferior_accretion:polished_drystone_stairs",
+  "count": 1
+}

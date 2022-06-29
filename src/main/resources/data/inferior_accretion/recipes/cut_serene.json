@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "inferior_accretion:serene"
+    }
+  },
+  "result": {
+    "item": "inferior_accretion:cut_serene",
+    "count": 4
+  }
+}

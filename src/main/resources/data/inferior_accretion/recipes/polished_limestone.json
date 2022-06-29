@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "inferior_accretion:limestone"
+    }
+  },
+  "result": {
+    "item": "inferior_accretion:polished_limestone",
+    "count": 4
+  }
+}

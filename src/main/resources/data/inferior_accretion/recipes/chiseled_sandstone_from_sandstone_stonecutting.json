@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "inferior_accretion:serene"
+  },
+  "result": "inferior_accretion:chiseled_serene",
+  "count": 1
+}

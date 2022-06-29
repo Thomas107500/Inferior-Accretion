@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "inferior_accretion:block/alabaster_slab"
+    },
+    "type=double": {
+      "model": "inferior_accretion:block/alabaster"
+    },
+    "type=top": {
+      "model": "inferior_accretion:block/alabaster_slab_top"
+    }
+  }
+}

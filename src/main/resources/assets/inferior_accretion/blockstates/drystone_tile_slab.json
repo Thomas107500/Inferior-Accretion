@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "inferior_accretion:block/drystone_tile_slab"
+    },
+    "type=double": {
+      "model": "inferior_accretion:block/drystone_tiles"
+    },
+    "type=top": {
+      "model": "inferior_accretion:block/drystone_tile_slab_top"
+    }
+  }
+}

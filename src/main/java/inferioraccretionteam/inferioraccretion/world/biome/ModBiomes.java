@@ -3,8 +3,6 @@ package inferioraccretionteam.inferioraccretion.world.biome;
 import inferioraccretionteam.inferioraccretion.InferiorAccretion;
 import inferioraccretionteam.inferioraccretion.world.level.levelgen.feature.ModPlacedFeatures;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
-import net.minecraft.data.worldgen.features.VegetationFeatures;
-import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -43,7 +41,7 @@ public class ModBiomes {
             .generationSettings(new BiomeGenerationSettings.Builder()
                     .addFeature(GenerationStep.Decoration.TOP_LAYER_MODIFICATION, ModPlacedFeatures.LIMESTONE_CAVE_COVER.getHolder().orElseThrow())
                     .addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.TROPICAL_CAVE_FLOOR_VEGETATION.getHolder().orElseThrow())
-                    //.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.TROPICAL_CAVE_BAMBOO.getHolder().orElseThrow())
+                    .addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.TROPICAL_CAVE_BAMBOO.getHolder().orElseThrow())
                     .build())
             .specialEffects(new BiomeSpecialEffects.Builder()
                     .fogColor(12638463)

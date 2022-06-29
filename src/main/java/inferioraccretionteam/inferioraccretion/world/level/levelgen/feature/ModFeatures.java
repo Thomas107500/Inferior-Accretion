@@ -2,6 +2,7 @@ package inferioraccretionteam.inferioraccretion.world.level.levelgen.feature;
 
 import inferioraccretionteam.inferioraccretion.InferiorAccretion;
 import inferioraccretionteam.inferioraccretion.world.level.levelgen.feature.configurations.CaveCoverConfiguration;
+import inferioraccretionteam.inferioraccretion.world.level.levelgen.feature.configurations.SimpleBlockWithBambooConfiguration;
 import net.minecraft.core.Registry;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -18,6 +19,11 @@ public class ModFeatures
 	@SuppressWarnings("unused")
 	public static final RegistryObject<Feature<CaveCoverConfiguration>> CAVE_COVER = FEATURES.register("cave_cover", () ->
 			new CaveCoverFeature(CaveCoverConfiguration.CODEC));
+
+	@SuppressWarnings("unused")
+	public static final RegistryObject<Feature<SimpleBlockWithBambooConfiguration>> SIMPLE_BLOCK_WITH_BAMBOO
+			= FEATURES.register("simple_block_with_bamboo", () ->
+			new SimpleBlockWithBambooFeature(SimpleBlockWithBambooConfiguration.CODEC));
 
 
 

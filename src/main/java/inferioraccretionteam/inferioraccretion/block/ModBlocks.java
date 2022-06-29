@@ -761,10 +761,15 @@ public class ModBlocks {
     }
 
     @SuppressWarnings("SameParameterValue")
+    private static <T extends Block> RegistryObject<T> registerBlockWithoutItem(String name, Supplier<T> block){
+        return BLOCKS.register(name, block);
+    }
+
+    @SuppressWarnings("SameParameterValue")
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
-        RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn, tab);
-        return toReturn;
+        RegistryObject<T> blockRegistryObject = registerBlockWithoutItem(name, block);
+        registerBlockItem(name, blockRegistryObject, tab);
+        return blockRegistryObject;
     }
 
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block, CreativeModeTab tab){

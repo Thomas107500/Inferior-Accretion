@@ -42,7 +42,6 @@ public class UndeadHog extends Zoglin implements Enemy, HoglinBase{
 
     @SuppressWarnings("NullableProblems")
     protected Brain<?> makeBrain(Dynamic<?> pDynamic) {
-        //Brain<UndeadHog> brain = this.brainProvider().makeBrain(pDynamic);
         Brain<UndeadHog> brain = this.hogBrainProvider().makeBrain(pDynamic);
         initCoreActivity(brain);
         initIdleActivity(brain);

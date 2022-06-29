@@ -2,8 +2,6 @@ package inferioraccretionteam.inferioraccretion.world.level.levelgen.feature;
 
 import inferioraccretionteam.inferioraccretion.InferiorAccretion;
 import net.minecraft.core.Registry;
-import net.minecraft.data.worldgen.features.VegetationFeatures;
-import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.placement.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -63,16 +61,16 @@ public class ModPlacedFeatures {
                                     HeightRangePlacement.uniform(VerticalAnchor.absolute(-53), VerticalAnchor.absolute(20)),
                                     BiomeFilter.biome())));
 
-    /*
+    @SuppressWarnings("unused")
     public static final RegistryObject<PlacedFeature> TROPICAL_CAVE_BAMBOO = PLACED_FEATURES.register("tropical_cave_bamboo",
-            () -> new PlacedFeature(ModConfiguredFeatures.TROPICAL_BAMBOO.getHolder().orElseThrow(),
-                    List.of(CountPlacement.of(10),
+            () -> new PlacedFeature(ModConfiguredFeatures.TROPICAL_CAVE_VEGETATION.getHolder().orElseThrow(),
+                    List.of(CountPlacement.of(125),
                             InSquarePlacement.spread(),
                             HeightRangePlacement.uniform(VerticalAnchor.absolute(-53), VerticalAnchor.absolute(20)),
                             BiomeFilter.biome()))
                     );
 
-     */
+
 
     public static void register(IEventBus eventBus){
         PLACED_FEATURES.register(eventBus);

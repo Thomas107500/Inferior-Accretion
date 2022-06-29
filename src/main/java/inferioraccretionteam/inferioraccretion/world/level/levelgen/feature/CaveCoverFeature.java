@@ -7,7 +7,6 @@ import net.minecraft.tags.FluidTags;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
-import net.minecraft.world.level.material.Fluids;
 
 public class CaveCoverFeature extends Feature<CaveCoverConfiguration>
 {
@@ -19,7 +18,7 @@ public class CaveCoverFeature extends Feature<CaveCoverConfiguration>
 	@Override
 	public boolean place(FeaturePlaceContext<CaveCoverConfiguration> pContext)
 	{
-		int sphereRadius = pContext.config().sphereRadius.sample(pContext.random());
+		int sphereRadius = pContext.config().sphereRadius().sample(pContext.random());
 		if (pContext.level().isEmptyBlock(pContext.origin()) || pContext.level().isWaterAt(pContext.origin())
 				|| pContext.level().isFluidAtPosition(pContext.origin(), (fs) -> fs.is(FluidTags.LAVA)))
 		{
@@ -36,7 +35,7 @@ public class CaveCoverFeature extends Feature<CaveCoverConfiguration>
 							if (state.getTags().anyMatch((tag) -> tag.toString().contains("stone"))
 									&& pContext.level().ensureCanWrite(pos))
 							{
-								pContext.level().setBlock(pos, pContext.config().state, 3);
+								pContext.level().setBlock(pos, pContext.config().state(), 3);
 							}
 						}
 					}

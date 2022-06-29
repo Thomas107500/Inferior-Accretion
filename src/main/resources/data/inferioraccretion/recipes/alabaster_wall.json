@@ -6,11 +6,11 @@
   ],
   "key": {
     "#": {
-      "item": "inferioraccretion:alabaster"
+      "item": "inferior_accretion:alabaster"
     }
   },
   "result": {
-    "item": "inferioraccretion:alabaster_wall",
+    "item": "inferior_accretion:alabaster_wall",
     "count": 6
   }
 }

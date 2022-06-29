@@ -5,11 +5,11 @@
   ],
   "key": {
     "#": {
-      "item": "inferioraccretion:smooth_serene"
+      "item": "inferior_accretion:smooth_serene"
     }
   },
   "result": {
-    "item": "inferioraccretion:smooth_serene_slab",
+    "item": "inferior_accretion:smooth_serene_slab",
     "count": 6
   }
 }

@@ -5,11 +5,11 @@
   ],
   "key": {
     "#": {
-      "item": "inferioraccretion:polished_alabaster"
+      "item": "inferior_accretion:polished_alabaster"
     }
   },
   "result": {
-    "item": "inferioraccretion:polished_alabaster_slab",
+    "item": "inferior_accretion:polished_alabaster_slab",
     "count": 6
   }
 }

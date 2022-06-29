@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "inferioraccretion:cut_serene"
+          "name": "inferior_accretion:cut_serene"
         }
       ],
       "conditions": [

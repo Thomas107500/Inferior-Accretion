@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "inferioraccretion:serene_wall"
+          "name": "inferior_accretion:serene_wall"
         }
       ],
       "conditions": [

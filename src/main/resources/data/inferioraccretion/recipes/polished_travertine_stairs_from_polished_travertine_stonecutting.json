@@ -1,8 +1,8 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "inferioraccretion:polished_travertine"
+    "item": "inferior_accretion:polished_travertine"
   },
-  "result": "inferioraccretion:polished_travertine_stairs",
+  "result": "inferior_accretion:polished_travertine_stairs",
   "count": 1
 }

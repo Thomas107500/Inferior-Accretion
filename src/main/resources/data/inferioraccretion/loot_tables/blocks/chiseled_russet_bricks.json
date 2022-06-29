@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "inferioraccretion:chiseled_russet_bricks"
+          "name": "inferior_accretion:chiseled_russet_bricks"
         }
       ],
       "conditions": [

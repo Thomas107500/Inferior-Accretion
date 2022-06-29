@@ -6,11 +6,11 @@
   ],
   "key": {
     "S": {
-      "item": "inferioraccretion:travertine_slab"
+      "item": "inferior_accretion:travertine_slab"
     }
   },
   "result": {
-    "item": "inferioraccretion:polished_travertine",
+    "item": "inferior_accretion:polished_travertine",
     "count": 1
   }
 }

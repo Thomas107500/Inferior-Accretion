@@ -6,11 +6,11 @@
   ],
   "key": {
     "#": {
-      "item": "inferioraccretion:drystone"
+      "item": "inferior_accretion:drystone"
     }
   },
   "result": {
-    "item": "inferioraccretion:drystone_wall",
+    "item": "inferior_accretion:drystone_wall",
     "count": 6
   }
 }

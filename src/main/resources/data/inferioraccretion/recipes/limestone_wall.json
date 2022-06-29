@@ -6,11 +6,11 @@
   ],
   "key": {
     "#": {
-      "item": "inferioraccretion:limestone"
+      "item": "inferior_accretion:limestone"
     }
   },
   "result": {
-    "item": "inferioraccretion:limestone_wall",
+    "item": "inferior_accretion:limestone_wall",
     "count": 6
   }
 }

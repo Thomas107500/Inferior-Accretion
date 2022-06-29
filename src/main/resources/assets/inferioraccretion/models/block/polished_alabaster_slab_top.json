@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "inferioraccretion:block/polished_alabaster",
-    "top": "inferioraccretion:block/polished_alabaster",
-    "side": "inferioraccretion:block/polished_alabaster"
-  }
-}

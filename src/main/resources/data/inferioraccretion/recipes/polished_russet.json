@@ -6,11 +6,11 @@
   ],
   "key": {
     "S": {
-      "item": "inferioraccretion:russet_slab"
+      "item": "inferior_accretion:russet_slab"
     }
   },
   "result": {
-    "item": "inferioraccretion:polished_russet",
+    "item": "inferior_accretion:polished_russet",
     "count": 1
   }
 }

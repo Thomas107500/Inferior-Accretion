@@ -25,7 +25,7 @@
                   }
                 }
               ],
-              "name": "inferioraccretion:lyce_ore"
+              "name": "inferior_accretion:lyce_ore"
             },
             {
               "type": "minecraft:item",
@@ -39,7 +39,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "inferioraccretion:lyce"
+              "name": "inferior_accretion:lyce"
             }
           ]
         }

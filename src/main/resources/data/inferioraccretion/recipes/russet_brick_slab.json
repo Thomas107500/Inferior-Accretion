@@ -5,11 +5,11 @@
   ],
   "key": {
     "#": {
-      "item": "inferioraccretion:russet_bricks"
+      "item": "inferior_accretion:russet_bricks"
     }
   },
   "result": {
-    "item": "inferioraccretion:russet_brick_slab",
+    "item": "inferior_accretion:russet_brick_slab",
     "count": 6
   }
 }

@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "inferioraccretion:drystone_wall"
+          "name": "inferior_accretion:drystone_wall"
         }
       ],
       "conditions": [

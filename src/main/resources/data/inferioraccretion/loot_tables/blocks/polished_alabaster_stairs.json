@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "inferioraccretion:polished_alabaster_stairs"
+          "name": "inferior_accretion:polished_alabaster_stairs"
         }
       ],
       "conditions": [

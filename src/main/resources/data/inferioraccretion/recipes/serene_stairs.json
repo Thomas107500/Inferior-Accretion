@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "inferioraccretion:serene"
+      "item": "inferior_accretion:serene"
     }
   },
   "result": {
-    "item": "inferioraccretion:serene_stairs",
+    "item": "inferior_accretion:serene_stairs",
     "count": 4
   }
 }

@@ -2,8 +2,8 @@
 	"type": "forge:add_features",
 	"biomes": "#minecraft:is_overworld",
 	"features": [
-		"inferioraccretion:alabaster_placed",
-		"inferioraccretion:serene_placed",
-		"inferioraccretion:drystone_placed"],
+		"inferior_accretion:alabaster_placed",
+		"inferior_accretion:serene_placed",
+		"inferior_accretion:drystone_placed"],
 	"step": "underground_ores"
 }

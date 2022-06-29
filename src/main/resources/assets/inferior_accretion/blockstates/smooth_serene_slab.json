@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "inferior_accretion:block/smooth_serene_slab"
+    },
+    "type=double": {
+      "model": "inferior_accretion:block/smooth_serene"
+    },
+    "type=top": {
+      "model": "inferior_accretion:block/smooth_serene_slab_top"
+    }
+  }
+}

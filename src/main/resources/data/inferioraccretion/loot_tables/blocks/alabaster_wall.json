@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "inferioraccretion:alabaster_wall"
+          "name": "inferior_accretion:alabaster_wall"
         }
       ],
       "conditions": [

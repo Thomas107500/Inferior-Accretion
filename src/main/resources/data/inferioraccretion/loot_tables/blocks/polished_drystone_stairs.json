@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "inferioraccretion:polished_drystone_stairs"
+          "name": "inferior_accretion:polished_drystone_stairs"
         }
       ],
       "conditions": [

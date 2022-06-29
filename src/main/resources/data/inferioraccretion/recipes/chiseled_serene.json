@@ -6,10 +6,10 @@
   ],
   "key": {
     "#": {
-      "item": "inferioraccretion:serene_slab"
+      "item": "inferior_accretion:serene_slab"
     }
   },
   "result": {
-    "item": "inferioraccretion:chiseled_serene"
+    "item": "inferior_accretion:chiseled_serene"
   }
 }

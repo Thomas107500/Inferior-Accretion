@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "inferioraccretion:drystone_brick_stairs"
+          "name": "inferior_accretion:drystone_brick_stairs"
         }
       ],
       "conditions": [

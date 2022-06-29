@@ -7,11 +7,11 @@
   ],
   "key": {
     "L": {
-      "item": "inferioraccretion:lyce"
+      "item": "inferior_accretion:lyce"
     }
   },
   "result": {
-    "item": "inferioraccretion:block_of_lyce",
+    "item": "inferior_accretion:block_of_lyce",
     "count": 1
   }
 }

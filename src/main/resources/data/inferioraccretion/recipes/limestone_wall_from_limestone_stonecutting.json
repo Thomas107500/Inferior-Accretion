@@ -1,8 +1,8 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "inferioraccretion:limestone"
+    "item": "inferior_accretion:limestone"
   },
-  "result": "inferioraccretion:limestone_wall",
+  "result": "inferior_accretion:limestone_wall",
   "count": 1
 }

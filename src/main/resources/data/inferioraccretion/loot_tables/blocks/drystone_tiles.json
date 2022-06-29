@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "inferioraccretion:drystone_tiles"
+          "name": "inferior_accretion:drystone_tiles"
         }
       ],
       "conditions": [

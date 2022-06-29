@@ -1,8 +1,8 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "inferioraccretion:travertine_bricks"
+    "item": "inferior_accretion:travertine_bricks"
   },
-  "result": "inferioraccretion:travertine_brick_wall",
+  "result": "inferior_accretion:travertine_brick_wall",
   "count": 1
 }

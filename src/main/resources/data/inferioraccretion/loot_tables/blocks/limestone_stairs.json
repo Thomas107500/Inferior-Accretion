@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "inferioraccretion:limestone_stairs"
+          "name": "inferior_accretion:limestone_stairs"
         }
       ],
       "conditions": [

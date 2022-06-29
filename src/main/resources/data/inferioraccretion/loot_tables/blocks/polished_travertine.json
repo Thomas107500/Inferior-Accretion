@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "inferioraccretion:polished_travertine"
+          "name": "inferior_accretion:polished_travertine"
         }
       ],
       "conditions": [

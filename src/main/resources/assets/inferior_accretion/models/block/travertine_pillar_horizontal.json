@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "inferior_accretion:block/travertine_pillar_top",
+    "side": "inferior_accretion:block/travertine_pillar"
+  }
+}

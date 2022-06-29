@@ -5,11 +5,11 @@
   ],
   "key": {
     "#": {
-      "item": "inferioraccretion:polished_limestone"
+      "item": "inferior_accretion:polished_limestone"
     }
   },
   "result": {
-    "item": "inferioraccretion:polished_limestone_slab",
+    "item": "inferior_accretion:polished_limestone_slab",
     "count": 6
   }
 }

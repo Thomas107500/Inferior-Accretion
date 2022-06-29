@@ -5,11 +5,11 @@
   ],
   "key": {
     "#": {
-      "item": "inferioraccretion:cut_serene"
+      "item": "inferior_accretion:cut_serene"
     }
   },
   "result": {
-    "item": "inferioraccretion:cut_serene_slab",
+    "item": "inferior_accretion:cut_serene_slab",
     "count": 6
   }
 }

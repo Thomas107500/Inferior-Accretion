@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "inferioraccretion:polished_russet"
+      "item": "inferior_accretion:polished_russet"
     }
   },
   "result": {
-    "item": "inferioraccretion:polished_russet_stairs",
+    "item": "inferior_accretion:polished_russet_stairs",
     "count": 4
   }
 }

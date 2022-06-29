@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "inferior_accretion:block/limestone",
+    "top": "inferior_accretion:block/limestone",
+    "side": "inferior_accretion:block/limestone"
+  }
+}

@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "inferioraccretion:russet"
+          "name": "inferior_accretion:russet"
         }
       ],
       "conditions": [

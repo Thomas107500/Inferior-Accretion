@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "inferioraccretion:smooth_serene_stairs"
+          "name": "inferior_accretion:smooth_serene_stairs"
         }
       ],
       "conditions": [

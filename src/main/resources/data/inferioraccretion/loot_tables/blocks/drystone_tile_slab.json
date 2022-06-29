@@ -13,7 +13,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
-                  "block": "inferioraccretion:drystone_tile_slab",
+                  "block": "inferior_accretion:drystone_tile_slab",
                   "properties": {
                     "type": "double"
                   }
@@ -26,7 +26,7 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "inferioraccretion:drystone_tile_slab"
+          "name": "inferior_accretion:drystone_tile_slab"
         }
       ]
     }

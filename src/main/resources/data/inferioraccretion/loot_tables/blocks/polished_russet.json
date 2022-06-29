@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "inferioraccretion:polished_russet"
+          "name": "inferior_accretion:polished_russet"
         }
       ],
       "conditions": [

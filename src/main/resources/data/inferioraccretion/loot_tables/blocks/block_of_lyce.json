@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "inferioraccretion:block_of_lyce"
+          "name": "inferior_accretion:block_of_lyce"
         }
       ],
       "conditions": [

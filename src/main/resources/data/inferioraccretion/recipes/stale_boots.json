@@ -6,10 +6,10 @@
   ],
   "key": {
     "X": {
-      "item": "inferioraccretion:rotten_hide"
+      "item": "inferior_accretion:rotten_hide"
     }
   },
   "result": {
-    "item": "inferioraccretion:stale_boots"
+    "item": "inferior_accretion:stale_boots"
   }
 }

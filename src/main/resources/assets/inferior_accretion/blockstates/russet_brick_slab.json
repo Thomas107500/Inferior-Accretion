@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "inferior_accretion:block/russet_brick_slab"
+    },
+    "type=double": {
+      "model": "inferior_accretion:block/russet_bricks"
+    },
+    "type=top": {
+      "model": "inferior_accretion:block/russet_brick_slab_top"
+    }
+  }
+}

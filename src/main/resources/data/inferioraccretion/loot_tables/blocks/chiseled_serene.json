@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "inferioraccretion:chiseled_serene"
+          "name": "inferior_accretion:chiseled_serene"
         }
       ],
       "conditions": [

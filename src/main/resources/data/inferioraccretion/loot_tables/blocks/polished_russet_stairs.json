@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "inferioraccretion:polished_russet_stairs"
+          "name": "inferior_accretion:polished_russet_stairs"
         }
       ],
       "conditions": [

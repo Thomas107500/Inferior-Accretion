@@ -2,6 +2,7 @@ package endurteam.inferior_accretion;
 
 import com.mojang.logging.LogUtils;
 import endurteam.inferior_accretion.block.ModBlocks;
+import endurteam.inferior_accretion.datafix.ModDataFixers;
 import endurteam.inferior_accretion.entity.ModEntityTypes;
 import endurteam.inferior_accretion.item.ModItems;
 import endurteam.inferior_accretion.world.biome.ModBiomes;
@@ -45,6 +46,7 @@ public class InferiorAccretion
         ModPlacedFeatures.register(eventBus);
         ModFeatures.register(eventBus);
         ModBiomes.register(eventBus);
+        ModDataFixers.init();
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

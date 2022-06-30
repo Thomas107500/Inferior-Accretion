@@ -185,8 +185,8 @@ jar {
                 "Specification-Title"     : "inferior_accretion",
                 "Specification-Vendor"    : "endurteam",
                 "Specification-Version"   : "1", // We are version 1 of ourselves
-                "Implementation-Title"    : "inferior_accretion",
-                "Implementation-Version"  : project.version,
+                "Implementation-Title"    : project.name,
+                "Implementation-Version"  : project.jar.archiveVersion,
                 "Implementation-Vendor"   : "endurteam",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])

@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:stone",
+    "minecraft:granite",
+    "minecraft:diorite",
+    "minecraft:andesite",
+    "minecraft:tuff",
+    "minecraft:deepslate",
+    "minecraft:cave_vines",
+    "minecraft:cave_vines_plant",
+    "minecraft:dirt",
+
+    "inferior_accretion:limestone"
+  ]
+}

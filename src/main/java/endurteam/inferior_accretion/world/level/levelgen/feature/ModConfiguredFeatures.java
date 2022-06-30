@@ -70,7 +70,7 @@ public class ModConfiguredFeatures {
                     ),8)));
 
 
-    @SuppressWarnings("unused")
+
     public static final RegistryObject<ConfiguredFeature<?,?>> TROPICAL_CAVE_VEGETATION = CONFIGURED_FEATURES.register("tropical_cave_vegetation",
             () -> new ConfiguredFeature<>(ModFeatures.SIMPLE_BLOCK_WITH_BAMBOO.get(), new SimpleBlockWithBambooConfiguration(1.0F, new WeightedStateProvider(
                     SimpleWeightedRandomList.<BlockState>builder()

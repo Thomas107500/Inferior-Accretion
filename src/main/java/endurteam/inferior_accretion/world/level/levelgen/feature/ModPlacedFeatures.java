@@ -1,8 +1,11 @@
 package endurteam.inferior_accretion.world.level.levelgen.feature;
 
 import endurteam.inferior_accretion.InferiorAccretion;
+import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
+import net.minecraft.data.worldgen.biome.OverworldBiomes;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
+import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
 import net.minecraft.world.level.levelgen.placement.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -51,7 +54,7 @@ public class ModPlacedFeatures {
                             HeightRangePlacement.uniform(VerticalAnchor.absolute(-53), VerticalAnchor.absolute(20)),
                             BiomeFilter.biome())));
 
-    @SuppressWarnings("unused")
+
     public static final RegistryObject<PlacedFeature> LIMESTONE_CAVE_COVER = PLACED_FEATURES.register("limestone_cave_cover",
             () -> new PlacedFeature(ModConfiguredFeatures.LIMESTONE_CAVE_COVER.getHolder().orElseThrow(),
                     //veins per chunk
@@ -67,9 +70,10 @@ public class ModPlacedFeatures {
                             List.of(CountPlacement.of(125),
                                     InSquarePlacement.spread(),
                                     HeightRangePlacement.uniform(VerticalAnchor.absolute(-53), VerticalAnchor.absolute(20)),
+                                    EnvironmentScanPlacement.scanningFor(Direction.DOWN, BlockPredicate.solid(), BlockPredicate.ONLY_IN_AIR_PREDICATE, 12),
                                     BiomeFilter.biome())));
 
-    @SuppressWarnings("unused")
+    /*
     public static final RegistryObject<PlacedFeature> TROPICAL_CAVE_BAMBOO = PLACED_FEATURES.register("tropical_cave_bamboo",
             () -> new PlacedFeature(ModConfiguredFeatures.TROPICAL_CAVE_VEGETATION.getHolder().orElseThrow(),
                     List.of(CountPlacement.of(125),
@@ -77,6 +81,7 @@ public class ModPlacedFeatures {
                             HeightRangePlacement.uniform(VerticalAnchor.absolute(-53), VerticalAnchor.absolute(20)),
                             BiomeFilter.biome()))
                     );
+    */
 
 
 

@@ -65,6 +65,8 @@ public class SimpleBlockWithBambooFeature extends Feature<SimpleBlockWithBambooC
 		BlockPos.MutableBlockPos blockpos$mutableblockpos = blockpos.mutable();
 		BlockPos.MutableBlockPos blockpos$mutableblockpos1 = blockpos.mutable();
 		int j = randomsource.nextInt(12) + 5;
+		//Podzol generation?
+		/*
 		if (randomsource.nextFloat() < configuration.bambooProbability()) {
 			int k = randomsource.nextInt(4) + 1;
 
@@ -81,7 +83,7 @@ public class SimpleBlockWithBambooFeature extends Feature<SimpleBlockWithBambooC
 				}
 			}
 		}
-
+		*/
 		for(int l1 = 0; l1 < j && worldgenlevel.isEmptyBlock(blockpos$mutableblockpos); ++l1) {
 			worldgenlevel.setBlock(blockpos$mutableblockpos, BAMBOO_TRUNK, 2);
 			blockpos$mutableblockpos.move(Direction.UP, 1);

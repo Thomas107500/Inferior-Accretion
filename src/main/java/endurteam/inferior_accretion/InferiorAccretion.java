@@ -2,7 +2,7 @@ package endurteam.inferior_accretion;
 
 import com.mojang.logging.LogUtils;
 import endurteam.inferior_accretion.block.ModBlocks;
-import endurteam.inferior_accretion.datafix.ModDataFixers;
+import endurteam.inferior_accretion.datafix.ModItemMapper;
 import endurteam.inferior_accretion.entity.ModEntityTypes;
 import endurteam.inferior_accretion.item.ModItems;
 import endurteam.inferior_accretion.world.biome.ModBiomes;
@@ -35,10 +35,10 @@ public class InferiorAccretion
     public InferiorAccretion()
     {
         // Register the setup method for modloading
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        eventBus.addListener(this::setup);
         ModBlocks.register(eventBus);
         ModItems.register(eventBus);
         ModEntityTypes.register(eventBus);
@@ -46,10 +46,10 @@ public class InferiorAccretion
         ModPlacedFeatures.register(eventBus);
         ModFeatures.register(eventBus);
         ModBiomes.register(eventBus);
-        ModDataFixers.init();
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+        ModItemMapper.register();
     }
 
     private void setup(final FMLCommonSetupEvent event)

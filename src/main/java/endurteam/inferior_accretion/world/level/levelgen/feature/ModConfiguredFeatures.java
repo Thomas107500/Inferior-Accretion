@@ -2,6 +2,7 @@ package endurteam.inferior_accretion.world.level.levelgen.feature;
 
 import endurteam.inferior_accretion.block.ModBlocks;
 import endurteam.inferior_accretion.InferiorAccretion;
+import endurteam.inferior_accretion.tag.ModTags;
 import endurteam.inferior_accretion.world.level.levelgen.feature.configurations.CaveCoverConfiguration;
 import endurteam.inferior_accretion.world.level.levelgen.feature.configurations.SimpleBlockWithBambooConfiguration;
 import net.minecraft.core.Registry;
@@ -62,8 +63,14 @@ public class ModConfiguredFeatures {
             () -> new ConfiguredFeature<>(ModFeatures.CAVE_COVER.get(), new CaveCoverConfiguration(
                     ModBlocks.LIMESTONE.get().defaultBlockState(), ClampedNormalInt.of(12.0f, 3.0f, 8, 16))));
 
+    public static final RegistryObject<ConfiguredFeature<?,?>> LYCE_ORE = CONFIGURED_FEATURES.register("lyce_ore",
+            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(
+                    List.of(
+                            OreConfiguration.target(new BlockMatchTest(ModBlocks.LIMESTONE.get()), ModBlocks.LYCE_ORE.get().defaultBlockState())
+                    ),8)));
 
-    @SuppressWarnings("unused")
+
+
     public static final RegistryObject<ConfiguredFeature<?,?>> TROPICAL_CAVE_VEGETATION = CONFIGURED_FEATURES.register("tropical_cave_vegetation",
             () -> new ConfiguredFeature<>(ModFeatures.SIMPLE_BLOCK_WITH_BAMBOO.get(), new SimpleBlockWithBambooConfiguration(1.0F, new WeightedStateProvider(
                     SimpleWeightedRandomList.<BlockState>builder()
@@ -76,7 +83,7 @@ public class ModConfiguredFeatures {
     @SuppressWarnings("unused")
     public static final RegistryObject<ConfiguredFeature<?,?>> TROPICAL_MOSS_PATCH = CONFIGURED_FEATURES.register("tropical_moss_patch",
             () -> new ConfiguredFeature<>(Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(
-                    BlockTags.MOSS_REPLACEABLE,
+                    ModTags.TROPICAL_MOSS_REPLACEABLE,
                     BlockStateProvider.simple(Blocks.MOSS_BLOCK),
                     PlacementUtils.inlinePlaced(ModConfiguredFeatures.TROPICAL_CAVE_VEGETATION.getHolder().orElseThrow()),
                     CaveSurface.FLOOR,

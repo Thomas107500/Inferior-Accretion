@@ -19,7 +19,7 @@ public class ModPlacedFeatures {
     public static final RegistryObject<PlacedFeature> ALABASTER_PLACED = PLACED_FEATURES.register("alabaster_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.ALABASTER.getHolder().orElseThrow(),
                             //veins per chunk
-                            List.of(CountPlacement.of(3) ,
+                            List.of(CountPlacement.of(3),
                                     InSquarePlacement.spread(),
                                     HeightRangePlacement.triangle(VerticalAnchor.bottom(), VerticalAnchor.absolute(-45)),
                                     BiomeFilter.biome()))
@@ -38,10 +38,18 @@ public class ModPlacedFeatures {
     public static final RegistryObject<PlacedFeature> DRYSTONE_PLACED = PLACED_FEATURES.register("drystone_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.DRYSTONE.getHolder().orElseThrow(),
                             //veins per chunk
-                            List.of(CountPlacement.of(4) ,
+                            List.of(CountPlacement.of(4),
                                     InSquarePlacement.spread(),
                                     HeightRangePlacement.uniform(VerticalAnchor.absolute(40), VerticalAnchor.absolute(146)),
                                     BiomeFilter.biome())));
+
+    public static final RegistryObject<PlacedFeature> LYCE_ORE_PLACED = PLACED_FEATURES.register("lyce_ore_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.LYCE_ORE.getHolder().orElseThrow(),
+                    //veins per chunk
+                    List.of(CountPlacement.of(5),
+                            InSquarePlacement.spread(),
+                            HeightRangePlacement.uniform(VerticalAnchor.absolute(-53), VerticalAnchor.absolute(20)),
+                            BiomeFilter.biome())));
 
     @SuppressWarnings("unused")
     public static final RegistryObject<PlacedFeature> LIMESTONE_CAVE_COVER = PLACED_FEATURES.register("limestone_cave_cover",
@@ -56,7 +64,7 @@ public class ModPlacedFeatures {
     public static final RegistryObject<PlacedFeature> TROPICAL_CAVE_FLOOR_VEGETATION = PLACED_FEATURES.register("tropical_cave_floor_vegetation",
             () -> new PlacedFeature(ModConfiguredFeatures.TROPICAL_MOSS_PATCH.getHolder().orElseThrow(),
                             //veins per chunk
-                            List.of(CountPlacement.of(125) ,
+                            List.of(CountPlacement.of(125),
                                     InSquarePlacement.spread(),
                                     HeightRangePlacement.uniform(VerticalAnchor.absolute(-53), VerticalAnchor.absolute(20)),
                                     BiomeFilter.biome())));
